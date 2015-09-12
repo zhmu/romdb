@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_rentfunctiontable -->
+<dbformat>
+  <field offset="0000" name="unk1" type="string" size="20" />
+  <field offset="0014" name="unk2" type="string" size="8" />
+  <field offset="001c" name="unk3" type="string" size="8" />
+  <field offset="0024" name="unk4" type="string" size="11" />
+  <field offset="002f" name="unk5" type="string" size="13" />
+  <field offset="003c" name="unk6" type="string" size="4" />
+  <field offset="0040" name="unk7" type="string" size="4" />
+  <field offset="0044" name="unk8" type="string" size="4" />
+  <field offset="0048" name="unk9" type="string" size="12" />
+  <field offset="0054" name="unk10" type="string" size="12" />
+</dbformat>

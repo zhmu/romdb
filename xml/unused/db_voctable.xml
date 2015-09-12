@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_voctable -->
+<dbformat>
+  <field offset="0000" name="GUID" type="u32" size="4" />
+  <field offset="0004" name="STR" type="float" size="4" />
+  <field offset="0008" name="STA" type="float" size="4" />
+  <field offset="000c" name="INT" type="float" size="4" />
+  <field offset="0010" name="WIS" type="float" size="4" />
+  <field offset="0014" name="DEX" type="float" size="4" />
+  <field offset="0018" name="hp_base" type="float" size="4" />
+  <field offset="001c" name="mp_base" type="float" size="4" />
+  <field offset="0020" name="STR_ADD" type="float" size="4" />
+  <field offset="0024" name="STA_ADD" type="float" size="4" />
+  <field offset="0028" name="INT_ADD" type="float" size="4" />
+  <field offset="002c" name="WIS_ADD" type="float" size="4" />
+  <field offset="0030" name="DEX_ADD" type="float" size="4" />
+  <field offset="0034" name="HP_ADD" type="float" size="4" />
+  <field offset="0038" name="MP_ADD" type="float" size="4" />
+  <field offset="003c" name="STR_MUL" type="float" size="4" />
+  <field offset="0040" name="STA_MUL" type="float" size="4" />
+  <field offset="0044" name="INT_MUL" type="float" size="4" />
+  <field offset="0048" name="WIS_MUL" type="float" size="4" />
+  <field offset="004c" name="DEX_MUL" type="float" size="4" />
+  <field offset="0050" name="HP_MUL" type="float" size="4" />
+  <field offset="0054" name="MP_MUL" type="float" size="4" />
+  <field offset="0058" name="HP_STR_FACTOR" type="float" size="4" />
+  <field offset="005c" name="HP_STA_FACTOR" type="float" size="4" />
+  <field offset="0060" name="unk1" type="float" size="4" />
+  <field offset="0064" name="unk2" type="u32" size="4" />
+  <field offset="0068" name="PATK_STR_FAKTOR" type="float" size="4" />
+  <field offset="006c" name="PATK_INT_FAKTOR" type="float" size="4" />
+  <field offset="0070" name="PATK_DEX_FAKTOR" type="float" size="4" />
+  <field offset="0074" name="PDEF_STA_FAKTOR" type="float" size="4" />
+  <field offset="0078" name="unk3" type="float" size="4" />
+  <field offset="007c" name="unk4" type="float" size="4" />
+  <field offset="0080" name="unk5" type="float" size="4" />
+  <field offset="0084" name="unk6" type="float" size="4" />
+  <field offset="0088" name="unk7" type="float" size="4" />
+  <field offset="008c" name="MDEF_WIS_FAKTOR" type="float" size="4" />
+  <field offset="0090" name="unk8" type="float" size="4" />
+  <field offset="0094" name="unk9" type="float" size="4" />
+  <field offset="0098" name="unk10" type="float" size="4" />
+  <field offset="009c" name="unk11" type="float" size="4" />
+  <field offset="00a0" name="unk12" type="float" size="4" />
+  <field offset="00a4" name="unk13" type="float" size="4" />
+  <field offset="00a8" name="unk14" type="float" size="4" />
+  <field offset="00ac" name="unk15" type="float" size="4" />
+  <field offset="00b2" name="unk16" type="float" size="4" />
+  <field offset="00b6" name="unk17" type="u8" size="222" />
+</dbformat>

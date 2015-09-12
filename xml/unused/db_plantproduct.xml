@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_plantproduct -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="seed" type="u32" size="4" /> <!-- seed id -->
+  <field offset="0008" name="c1" type="u32" size="4" /> <!-- grow ratio 1 on harverting (plant health?) -->
+  <field offset="000c" name="c2" type="u32" size="4" /> <!-- grow ratio 2 on harvesting (feed?) -->
+  <field offset="0010" name="tid1" type="u32" size="4" /> <!-- treasure id 1 -->
+  <field offset="0014" name="tid2" type="u32" size="4" /> <!-- treasure id 2 (rare product usually) -->
+  <field offset="0018" name="tid3" type="u32" size="4" /> <!-- treasure id 3 (0 or equals tid1) -->
+  <field offset="001c" name="bonus" type="float" size="4" /> <!-- chance of getting bonus (rare or tid1 x2?) -->
+  <field offset="0020" name="script" type="string" size="32" /> <!-- server script, which calculates chance for lucky or speed potion -->
+</dbformat>

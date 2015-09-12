@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_motiontable -->
+<dbformat>
+  <field offset="0000" name="unk1" type="u32" size="4" />
+  <field offset="0004" name="unk2" type="u32" size="4" />
+  <field offset="0008" name="unk3" type="u32" size="4" />
+  <field offset="000c" name="unk4" type="string" size="24" />
+  <field offset="0024" name="unk5" type="u32" size="4" />
+  <field offset="0028" name="unk6" type="u32" size="4" />
+  <field offset="002c" name="unk7" type="u32" size="4" />
+  <field offset="0034" name="unk8" type="u32" size="4" />
+  <field offset="0038" name="unk9" type="u32" size="4" />
+  <field offset="003c" name="unk10" type="u32" size="4" />
+  <field offset="0040" name="unk11" type="u32" size="4" />
+  <field offset="0044" name="unk12" type="u32" size="4" />
+  <field offset="0048" name="unk13" type="u32" size="4" /> <!-- =32768 -->
+</dbformat>

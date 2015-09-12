@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_titleobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =8 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0028" name="mode" type="bool4" size="4" />
+  <field offset="0040" name="rare" type="u32" size="4" />
+  <field offset="0090" name="type" type="u32" size="4" />
+  <field offset="0094" name="famous" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0098" name="mainjob" type="u32" size="4" />
+  <field offset="009c" name="mainjoblv" type="u32" size="4" />
+  <field offset="00a0" name="subjob" type="u32" size="4" />
+  <field offset="00a4" name="subjoblv" type="u32" size="4" />
+  <field offset="00a8" name="killcount_type" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00ac" name="killcount_killgroup" type="u32" size="4" />
+  <field offset="00b0" name="killcount_count" type="u32" size="4" />
+  <field offset="00b4" name="eqtype1" type="u32" size="4" />
+  <field offset="00b8" name="eqtype2" type="u32" size="4" />
+  <field offset="00bc" name="eqtype3" type="u32" size="4" />
+  <field offset="00c0" name="eqtype4" type="u32" size="4" />
+  <field offset="00c4" name="eqtype5" type="u32" size="4" />
+  <field offset="00dc" name="eqtypevalue1" type="u32" size="4" />
+  <field offset="00e0" name="eqtypevalue2" type="u32" size="4" />
+  <field offset="00e4" name="eqtypevalue3" type="u32" size="4" />
+  <field offset="00e8" name="eqtypevalue4" type="u32" size="4" />
+  <field offset="00ec" name="eqtypevalue5" type="u32" size="4" />
+  <field offset="0104" name="eqtypeonattackmagicrate" type="u32" size="4" />
+  <field offset="0108" name="eqtypeonattackmagicrank" type="u32" size="4" /> <!-- =0 -->
+  <field offset="010c" name="eqtypeonattackmagicid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0110" name="skillid" type="u32" size="4" />
+  <field offset="0114" name="skilllv" type="u32" size="4" />
+  <field offset="0118" name="classify1" type="u32" size="4" />
+  <field offset="011c" name="classify2" type="u32" size="4" />
+  <field offset="0120" name="luaevent" type="string" size="64" />
+  <field offset="0160" name="exeqtype1" type="u32" size="4" />
+  <field offset="0164" name="exeqtype2" type="u32" size="4" />
+  <field offset="0168" name="exeqtype3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="016c" name="exeqtype4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0170" name="exeqtype5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0188" name="exeqtypevalue1" type="u32" size="4" />
+  <field offset="018c" name="exeqtypevalue2" type="u32" size="4" />
+  <field offset="0190" name="exeqtypevalue3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0194" name="exeqtypevalue4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0198" name="exeqtypevalue5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="01bc" name="titlesysnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="01c0" name="titlesysluaevent" type="string" size="64" />
+</dbformat>

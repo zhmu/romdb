@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_cardobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =2 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="001c" name="maxheap" type="bool4" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0028" name="unk2" type="u32" size="4" />
+  <field offset="0034" name="cost" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0040" name="rare" type="u32" size="4" />
+  <field offset="0058" name="unk3" type="bool4" size="4" />
+  <field offset="0078" name="unk4" type="u32" size="4" />
+  <field offset="007c" name="unk5" type="u32" size="4" />
+  <field offset="0080" name="unk6" type="u32" size="4" />
+  <field offset="0090" name="unk7" type="u32" size="4" />
+  <field offset="0144" name="starvalue" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0178" name="unk8" type="bool4" size="4" />
+  <field offset="0355" name="isstandardcost" type="u8" size="3" />
+  <field offset="0358" name="referencelv" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0364" name="cardorgobjid" type="u32" size="4" />
+  <field offset="0370" name="unk9" type="u32" size="4" />
+  <field offset="03a4" name="cardpriorityid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="069c" name="cardaddpower" type="u32" size="4" /> <!-- reference to addpowerobject.db -->
+  <field offset="06a0" name="unk10" type="u8" size="40" />
+</dbformat>

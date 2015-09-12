@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_createroleobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =24 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="008c" name="unk2" type="u32" size="4" />
+  <field offset="0090" name="job" type="u32" size="4" />
+  <field offset="0094" name="bornposzoneid" type="u32" size="4" />
+  <field offset="0098" name="bornposx" type="u32" size="4" />
+  <field offset="009c" name="bornposy" type="u32" size="4" />
+  <field offset="00a0" name="bornposz" type="u32" size="4" />
+  <field offset="00a4" name="bornposdir" type="u32" size="4" />
+  <field offset="00a8" name="eq_id1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00ac" name="eq_id2" type="u32" size="4" />
+  <field offset="00b0" name="eq_id3" type="u32" size="4" />
+  <field offset="00b4" name="eq_id4" type="u32" size="4" />
+  <field offset="00b8" name="eq_id5" type="u32" size="4" />
+  <field offset="00bc" name="eq_id6" type="u32" size="4" />
+  <field offset="00c0" name="eq_id7" type="u32" size="4" />
+  <field offset="00c4" name="eq_id8" type="u32" size="4" />
+  <field offset="00c8" name="eq_id9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00cc" name="eq_id10" type="u32" size="4" />
+  <field offset="00d0" name="eq_id11" type="u32" size="4" />
+  <field offset="00d4" name="eq_id12" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d8" name="eq_id13" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00dc" name="eq_id14" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00e0" name="eq_id15" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00e4" name="eq_id16" type="u32" size="4" />
+  <field offset="00e8" name="eq_id17" type="u32" size="4" />
+  <field offset="00ec" name="eq_id18" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f0" name="item_id1" type="u32" size="4" />
+  <field offset="00f4" name="item_id2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f8" name="item_id3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00fc" name="item_id4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0100" name="item_id5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0104" name="item_id6" type="u32" size="4" />
+  <field offset="0108" name="item_id7" type="u32" size="4" />
+  <field offset="010c" name="item_id8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0110" name="item_id9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0114" name="item_id10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0118" name="item_count1" type="bool4" size="4" />
+  <field offset="011c" name="item_count2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0120" name="item_count3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0124" name="item_count4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0128" name="item_count5" type="bool4" size="4" />
+  <field offset="012c" name="item_count6" type="bool4" size="4" />
+  <field offset="0130" name="item_count7" type="bool4" size="4" />
+  <field offset="0134" name="item_count8" type="bool4" size="4" />
+  <field offset="0138" name="item_count9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="013c" name="item_count10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0140" name="racelimit" type="u32" size="4" />
+  <field offset="0144" name="eqpreview_id1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0148" name="eqpreview_id2" type="u32" size="4" />
+  <field offset="014c" name="eqpreview_id3" type="u32" size="4" />
+  <field offset="0150" name="eqpreview_id4" type="u32" size="4" />
+  <field offset="0154" name="eqpreview_id5" type="u32" size="4" />
+  <field offset="0158" name="eqpreview_id6" type="u32" size="4" />
+  <field offset="015c" name="eqpreview_id7" type="u32" size="4" />
+  <field offset="0160" name="eqpreview_id8" type="u32" size="4" />
+  <field offset="0164" name="eqpreview_id9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0168" name="eqpreview_id10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="016c" name="eqpreview_id11" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0170" name="eqpreview_id12" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0174" name="eqpreview_id13" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0178" name="eqpreview_id14" type="u32" size="4" /> <!-- =0 -->
+  <field offset="017c" name="eqpreview_id15" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0180" name="eqpreview_id16" type="u32" size="4" />
+  <field offset="0184" name="eqpreview_id17" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0188" name="eqpreview_id18" type="u32" size="4" /> <!-- =0 -->
+</dbformat>

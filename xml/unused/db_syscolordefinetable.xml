@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_syscolordefinetable -->
+<dbformat>
+  <field offset="0000" name="unk1" type="u32" size="4" />
+</dbformat>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_addpowerobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- '=5 (infact this is the hi-dword of the 'guid') -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="type" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0094" name="inc_magic" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0098" name="inc_magic_actionrate" type="u32" size="4" /> <!-- =0 -->
+  <field offset="009c" name="inc_magictype" type="u32" size="4" />
+  <field offset="00a0" name="addonpos_armorpos" type="u32" size="4" />
+  <field offset="00a4" name="addonpos_armortype" type="u32" size="4" />
+  <field offset="00a8" name="addonpos_weapontype" type="u32" size="4" />
+  <field offset="00ac" name="addonpos_weaponpos" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b0" name="unk2" type="u32" size="4" /> <!-- =200 -->
+  <field offset="00b4" name="addonpos_other" type="u32" size="4" />
+  <field offset="00b8" name="eqtype1" type="u32" size="4" /> <!-- Attribute to change 1 -->
+  <field offset="00bc" name="eqtype2" type="u32" size="4" /> <!-- Attribute to change 2 -->
+  <field offset="00c0" name="eqtype3" type="u32" size="4" /> <!-- Attribute to change 3 -->
+  <field offset="00c4" name="eqtype4" type="u32" size="4" /> <!-- Attribute to change 4 -->
+  <field offset="00c8" name="eqtype5" type="u32" size="4" /> <!-- Attribute to change 5 -->
+  <field offset="00cc" name="eqtype6" type="u32" size="4" /> <!-- Attribute to change 6 -->
+  <field offset="00d0" name="eqtype7" type="u32" size="4" /> <!-- Attribute to change 7 -->
+  <field offset="00d4" name="eqtype8" type="u32" size="4" /> <!-- Attribute to change 8 -->
+  <field offset="00d8" name="eqtype9" type="u32" size="4" /> <!-- Attribute to change 9 -->
+  <field offset="00dc" name="eqtype10" type="u32" size="4" /> <!-- Attribute to change 10 -->
+  <field offset="00e0" name="eqtypevalue1" type="u32" size="4" /> <!-- value for attribute1 -->
+  <field offset="00e4" name="eqtypevalue2" type="u32" size="4" /> <!-- value for attribute2 -->
+  <field offset="00e8" name="eqtypevalue3" type="u32" size="4" /> <!-- value for attribute3 -->
+  <field offset="00ec" name="eqtypevalue4" type="u32" size="4" /> <!-- value for attribute4 -->
+  <field offset="00f0" name="eqtypevalue5" type="u32" size="4" /> <!-- value for attribute5 -->
+  <field offset="00f4" name="eqtypevalue6" type="u32" size="4" /> <!-- value for attribute6 -->
+  <field offset="00f8" name="eqtypevalue7" type="u32" size="4" /> <!-- value for attribute7 -->
+  <field offset="00fc" name="eqtypevalue8" type="u32" size="4" /> <!-- value for attribute8 -->
+  <field offset="0100" name="eqtypevalue9" type="u32" size="4" /> <!-- value for attribute9 -->
+  <field offset="0104" name="eqtypevalue10" type="u32" size="4" /> <!-- value for attribute10 -->
+  <field offset="0108" name="eqtypeonattackmagicrate" type="u32" size="4" /> <!-- =10 -->
+  <field offset="010c" name="eqtypeonattackmagicrank" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0110" name="eqtypeonattackmagicid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0114" name="isstandardability" type="bool4" size="4" />
+  <field offset="0118" name="standardability_lv" type="u32" size="4" />
+  <field offset="011c" name="standardability_argtype1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0120" name="standardability_argtype2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0124" name="standardability_argtype3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0128" name="standardability_argtype4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="012c" name="standardability_argtype5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0130" name="standardability_arg1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0134" name="standardability_arg2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0138" name="standardability_arg3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="013c" name="standardability_arg4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0140" name="standardability_arg5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0144" name="starvalue" type="u32" size="4" />
+  <field offset="0148" name="isbirthability" type="bool4" size="4" />
+  <field offset="014c" name="inherentvalue" type="u32" size="4" />
+  <field offset="0150" name="rarity" type="u32" size="4" />
+</dbformat>

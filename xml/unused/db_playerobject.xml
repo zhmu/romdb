@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_playerobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+</dbformat>

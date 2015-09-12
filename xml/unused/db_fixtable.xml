@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_fixtable -->
+<dbformat>
+  <field offset="0000" name="unk1" type="u32" size="4" />
+  <field offset="0004" name="unk2" type="string" size="2" />
+  <field offset="0006" name="unk3" type="string" size="9" />
+  <field offset="000f" name="unk4" type="string" size="3" />
+  <field offset="0012" name="unk5" type="string" size="4" />
+  <field offset="0016" name="unk6" type="u32" size="4" />
+  <field offset="001a" name="unk7" type="string" size="8" />
+  <field offset="0022" name="unk8" type="u32" size="4" />
+  <field offset="0026" name="unk9" type="u32" size="4" />
+  <field offset="002a" name="unk10" type="u32" size="4" />
+  <field offset="002e" name="unk11" type="float" size="4" />
+  <field offset="0032" name="unk12" type="u32" size="4" />
+  <field offset="0036" name="unk13" type="u32" size="4" />
+  <field offset="003a" name="unk14" type="u32" size="4" />
+  <field offset="003e" name="unk15" type="string" size="4" />
+  <field offset="0042" name="unk16" type="u32" size="4" />
+  <field offset="004a" name="unk17" type="u32" size="4" />
+  <field offset="0052" name="unk18" type="u32" size="4" />
+  <field offset="0056" name="unk19" type="u32" size="4" />
+  <field offset="005a" name="unk20" type="string" size="12" />
+  <field offset="0066" name="unk21" type="u32" size="4" />
+  <field offset="006a" name="unk22" type="string" size="10" />
+  <field offset="0074" name="unk23" type="float" size="4" />
+</dbformat>

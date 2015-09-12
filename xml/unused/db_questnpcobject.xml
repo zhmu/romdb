@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_questnpcobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =14 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="003c" name="revivetime" type="u32" size="4" />
+  <field offset="008c" name="unk2" type="u32" size="4" />
+  <field offset="017c" name="mainhandeq1" type="u32" size="4" />
+  <field offset="0180" name="unk3" type="u32" size="4" />
+  <field offset="0184" name="unk4" type="u32" size="4" />
+  <field offset="0188" name="unk5" type="u32" size="4" />
+  <field offset="018c" name="unk6" type="u32" size="4" />
+  <field offset="0190" name="sechandeq1" type="u32" size="4" />
+  <field offset="0194" name="unk7" type="u32" size="4" />
+  <field offset="0198" name="unk8" type="u32" size="4" />
+  <field offset="019c" name="unk9" type="u32" size="4" />
+  <field offset="01a0" name="unk10" type="u32" size="4" />
+  <field offset="01a4" name="iquestmode" type="u32" size="4" />
+  <field offset="01a8" name="szquestnpctext" type="u32" size="4" /> <!-- =0 -->
+  <field offset="01ac" name="szquestdoingtext" type="u32" size="4" /> <!-- =0 -->
+  <field offset="01b0" name="iquestid1" type="u32" size="4" />
+  <field offset="01b4" name="iquestid2" type="u32" size="4" />
+  <field offset="01b8" name="iquestid3" type="u32" size="4" />
+  <field offset="01bc" name="iquestid4" type="u32" size="4" />
+  <field offset="01c0" name="iquestid5" type="u32" size="4" />
+  <field offset="01c4" name="iquestid6" type="u32" size="4" />
+  <field offset="01c8" name="iquestid7" type="u32" size="4" />
+  <field offset="01cc" name="iquestid8" type="u32" size="4" />
+  <field offset="01d0" name="iquestid9" type="u32" size="4" />
+  <field offset="01d4" name="iquestid10" type="u32" size="4" />
+  <field offset="01d8" name="iquestid11" type="u32" size="4" />
+  <field offset="01dc" name="iquestid12" type="u32" size="4" />
+  <field offset="01e0" name="iquestid13" type="u32" size="4" />
+  <field offset="01e4" name="iquestid14" type="u32" size="4" />
+  <field offset="01e8" name="iquestid15" type="u32" size="4" />
+  <field offset="01ec" name="iquestid16" type="u32" size="4" />
+  <field offset="01f0" name="iquestid17" type="u32" size="4" />
+  <field offset="01f4" name="iquestid18" type="u32" size="4" />
+  <field offset="01f8" name="iquestid19" type="u32" size="4" />
+  <field offset="01fc" name="iquestid20" type="u32" size="4" />
+  <field offset="02cc" name="unk11" type="u32" size="4" />
+  <field offset="02d0" name="unk12" type="u32" size="4" />
+  <field offset="02d4" name="unk13" type="u32" size="4" />
+  <field offset="02d8" name="unk14" type="u32" size="4" />
+  <field offset="02dc" name="unk15" type="u32" size="4" />
+  <field offset="02e0" name="unk16" type="u32" size="4" />
+  <field offset="02e4" name="unk17" type="u32" size="4" />
+  <field offset="02e8" name="unk18" type="u32" size="4" />
+  <field offset="02ec" name="unk19" type="u32" size="4" />
+  <field offset="0320" name="iquestnpcrefid" type="u32" size="4" />
+  <field offset="0344" name="szluascript" type="string" size="128" />
+  <field offset="03c4" name="iquestobjtype" type="bool4" size="4" />
+  <field offset="0450" name="titlename" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0460" name="questobjcraftmode" type="u32" size="4" />
+  <field offset="0464" name="zoneid" type="u32" size="4" />
+  <field offset="0468" name="x" type="u32" size="4" />
+  <field offset="046c" name="y" type="u32" size="4" />
+  <field offset="0470" name="z" type="u32" size="4" />
+  <field offset="0474" name="zoneid_bk" type="u32" size="4" />
+  <field offset="047c" name="campid" type="u32" size="4" />
+  <field offset="0480" name="unk20" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0484" name="szluainitscript" type="string" size="324" />
+  <field offset="05c8" name="otherflag" type="bool4" size="4" />
+  <field offset="05fc" name="ornamenteq" type="u32" size="4" />
+  <field offset="0600" name="szluadisplayscript" type="string" size="64" />
+  <field offset="0640" name="npcmode" type="u32" size="4" />
+  <field offset="0644" name="unk21" type="u32" size="4" />
+  <field offset="0650" name="searchgroupid" type="bool4" size="4" />
+  <field offset="0654" name="unk22" type="u8" size="484" />
+</dbformat>

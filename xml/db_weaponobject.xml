@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_weaponobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" /> <!-- item - ID -->
+  <field offset="0004" name="dbtype" type="u32" size="4" /> <!-- =2 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- reference to imageobject.db -->
+  <field offset="0018" name="unk1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="001c" name="maxheap" type="u32" size="4" /> <!-- max items count on stack -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0028" name="mode" type="u32" size="4" />
+  <field offset="002c" name="pricestype" type="u32" size="4" />
+  <field offset="0030" name="selltype" type="u32" size="4" />
+  <field offset="0034" name="cost" type="u32" size="4" /> <!-- Price if sold to a trade *10 (215 = 21Gold) -->
+  <field offset="0038" name="buyunit" type="u32" size="4" />
+  <field offset="003c" name="unk2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0040" name="rare" type="u32" size="4" /> <!-- base quality (0 white, 1 green, etc) -->
+  <field offset="0044" name="generaterate" type="float" size="4" />
+  <field offset="0048" name="maxworldcount" type="float" size="4" />
+  <field offset="004c" name="limitvoc" type="u32" size="4" /> <!-- -1, 1, 4 -->
+  <field offset="0050" name="limitrace" type="u32" size="4" /> <!-- -1, 65535 -->
+  <field offset="0054" name="limitsex" type="u32" size="4" /> <!-- -1, 3 -->
+  <field offset="0058" name="limitlv" type="u32" size="4" /> <!-- minimum player level -->
+  <field offset="005c" name="limitstr" type="u32" size="4" /> <!-- 0, 15, 100 -->
+  <field offset="0060" name="limitsta" type="u32" size="4" /> <!-- 0, 15, 100 -->
+  <field offset="0064" name="limitint" type="u32" size="4" /> <!-- 0, 15, 100 -->
+  <field offset="0068" name="limitmnd" type="u32" size="4" /> <!-- 0, 15, 100 -->
+  <field offset="006c" name="limitagi" type="u32" size="4" /> <!-- 0, 15, 100 -->
+  <field offset="0070" name="livetimetype" type="bool4" size="4" />
+  <field offset="0074" name="livetime" type="u32" size="4" />
+  <field offset="0078" name="unk3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="007c" name="unk4" type="u32" size="4" /> <!-- -1..7 -->
+  <field offset="0080" name="unk5" type="u32" size="4" /> <!-- -1..2 -->
+  <field offset="0084" name="unk6" type="u32" size="4" /> <!-- 0, 2, 4, 8, 16, 32, 64, 128, 512, 1024, 2048, 4096, 8192, 16384 -->
+  <field offset="0088" name="specialmoneycost" type="u32" size="4" />
+  <field offset="0090" name="unk7" type="u32" size="4" /> <!-- =2 -->
+  <field offset="0094" name="itemtype" type="u32" size="4" />
+  <field offset="0098" name="incmagic_onuse" type="u32" size="4" /> <!-- call magic skill on use -->
+  <field offset="009c" name="unk8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00a0" name="unk9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00a4" name="disappearrate" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00a8" name="dissolutionrate" type="float" size="4" />
+  <field offset="00ac" name="srcrecipe" type="u32" size="4" /> <!-- recipe which create this item recipeobject.db -->
+  <field offset="00b0" name="weapontype" type="u32" size="4" /> <!-- 0-20 -> 1-Sword; 2-Dagger; 6-2h-Sword; 7-2h-Staff; 11-Bow -->
+  <field offset="00b4" name="weaponpos" type="u32" size="4" /> <!-- 0-6 -> 0-MainHand; 1-OffHand; 2-Einhand; 3-twoHand; 4-Munition; 5-Ranged weapon; 6-Craft-Tool -->
+  <!-- attributes are in eneu.csv, SYS_WEAREQTYPE_xxx -->
+  <field offset="00b8" name="eqtype1" type="u32" size="4" /> <!-- Attribute to change 1 -->
+  <field offset="00bc" name="eqtype2" type="u32" size="4" /> <!-- Attribute to change 2 -->
+  <field offset="00c0" name="eqtype3" type="u32" size="4" /> <!-- Attribute to change 3 -->
+  <field offset="00c4" name="eqtype4" type="u32" size="4" /> <!-- Attribute to change 4 -->
+  <field offset="00c8" name="eqtype5" type="u32" size="4" /> <!-- Attribute to change 5 -->
+  <field offset="00cc" name="eqtype6" type="u32" size="4" /> <!-- Attribute to change 6 -->
+  <field offset="00d0" name="eqtype7" type="u32" size="4" /> <!-- Attribute to change 7 -->
+  <field offset="00d4" name="eqtype8" type="u32" size="4" /> <!-- Attribute to change 8 -->
+  <field offset="00d8" name="eqtype9" type="u32" size="4" /> <!-- Attribute to change 9 -->
+  <field offset="00dc" name="eqtype10" type="u32" size="4" /> <!-- Attribute to change 10 -->
+  <field offset="00e0" name="eqtypevalue1" type="u32" size="4" /> <!-- value for attribute1 -->
+  <field offset="00e4" name="eqtypevalue2" type="u32" size="4" /> <!-- value for attribute2 -->
+  <field offset="00e8" name="eqtypevalue3" type="u32" size="4" /> <!-- value for attribute3 -->
+  <field offset="00ec" name="eqtypevalue4" type="u32" size="4" /> <!-- value for attribute4 -->
+  <field offset="00f0" name="eqtypevalue5" type="u32" size="4" /> <!-- value for attribute5 -->
+  <field offset="00f4" name="eqtypevalue6" type="u32" size="4" /> <!-- value for attribute6 -->
+  <field offset="00f8" name="eqtypevalue7" type="u32" size="4" /> <!-- value for attribute7 -->
+  <field offset="00fc" name="eqtypevalue8" type="u32" size="4" /> <!-- value for attribute8 -->
+  <field offset="0100" name="eqtypevalue9" type="u32" size="4" /> <!-- value for attribute9 -->
+  <field offset="0104" name="eqtypevalue10" type="u32" size="4" /> <!-- value for attribute10 -->
+  <field offset="0108" name="eqtypeonattackmagicrate" type="u32" size="4" />
+  <field offset="010c" name="eqtypeonattackmagicrank" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0110" name="eqtypeonattackmagicid" type="u32" size="4" /> <!-- =0 -->
+  <!-- 51xxxx = stat, 72xxxx = random -->
+  <field offset="0114" name="dropability1" type="u32" size="4" /> <!-- random stat on drop 1 -->
+  <field offset="0118" name="dropabilityrate1" type="u32" size="4" /> <!-- Percent chance for stat 1 (x/10) -->
+  <field offset="011c" name="dropability2" type="u32" size="4" /> <!-- random stat on drop 2 -->
+  <field offset="0120" name="dropabilityrate2" type="u32" size="4" /> <!-- Percent chance for stat 2 (x/10) -->
+  <field offset="0124" name="dropability3" type="u32" size="4" /> <!-- random stat on drop 3 -->
+  <field offset="0128" name="dropabilityrate3" type="u32" size="4" /> <!-- Percent chance for stat 3 (x/10) -->
+  <field offset="012c" name="dropability4" type="u32" size="4" /> <!-- random stat on drop 4 -->
+  <field offset="0130" name="dropabilityrate4" type="u32" size="4" /> <!-- Percent chance for stat 4 (x/10) -->
+  <field offset="0134" name="dropability5" type="u32" size="4" /> <!-- random stat on drop 5 -->
+  <field offset="0138" name="dropabilityrate5" type="u32" size="4" /> <!-- Percent chance for stat 5 (x/10) -->
+  <field offset="013c" name="dropability6" type="u32" size="4" /> <!-- random stat on drop 6 -->
+  <field offset="0140" name="dropabilityrate6" type="u32" size="4" /> <!-- Percent chance for stat 6 (x/10) -->
+  <field offset="0144" name="unk10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0148" name="holebase" type="u32" size="4" />
+  <field offset="014c" name="holerange" type="u32" size="4" />
+  <field offset="0150" name="maxattrcount" type="u32" size="4" />
+  <field offset="0154" name="unk11" type="u8" size="10" /> <!-- =0 -->
+  <field offset="0174" name="durable" type="u32" size="4" /> <!-- Max Durability -->
+  <field offset="0180" name="manufacturelv" type="u8" size="0" />
+  <field offset="0180" name="manufacturetype" type="u32" size="4" />
+  <field offset="0188" name="suitid" type="u32" size="4" /> <!-- Item-Set ID (reference to suitobject.db) -->
+  <field offset="018c" name="attackrange" type="u32" size="4" />
+  <field offset="0190" name="attackspeed" type="u32" size="4" />
+  <field offset="0194" name="usetype" type="u32" size="4" /> <!-- '=1 can be used; =2 can be used and triggers 'srvscript'  -->
+  <field offset="0198" name="srvscript" type="string" size="128" /> <!-- see 'usetype' above -->
+  <field offset="0218" name="cliscript" type="u32" size="4" /> <!-- =0, client script on use -->
+  <field offset="0298" name="checkusescript" type="string" size="189" /> <!-- script which tests if item is ready to use -->
+  <field offset="0355" name="isstandardcost" type="bool4" size="4" />
+  <field offset="0368" name="cardid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="036c" name="imageefficacytype" type="u32" size="4" />
+  <field offset="03ac" name="refinetableid" type="u32" size="4" /> <!-- PLUS effect: reference to eqrefineabilityobject.db (index= refinetableid+PLUS-1) -->
+  <field offset="0475" name="isfixdurable" type="bool4" size="4" /> <!-- Max durability is fixed -->
+  <field offset="04a8" name="starvalue" type="u32" size="4" /> <!-- =0 -->
+  <field offset="04ac" name="runelimetlv" type="u32" size="4" />
+  <field offset="04b8" name="selectbaseattrcount" type="u32" size="4" />
+  <field offset="04bc" name="baseattrcount" type="u32" size="4" />
+  <field offset="0540" name="itemuniquetype" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0694" name="ddmg" type="u32" size="4" /> <!-- phys damage -->
+  <field offset="0698" name="dmdmg" type="u32" size="4" /> <!-- magic damage -->
+  <field offset="06ac" name="bodymaxcount" type="u32" size="4" /> <!-- =0 -->
+  <field offset="06bc" name="refinelv" type="u32" size="4" />
+  <field offset="06c0" name="addpowerquality" type="u32" size="4" />
+</dbformat>

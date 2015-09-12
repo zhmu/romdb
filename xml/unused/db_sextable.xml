@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_sextable -->
+<dbformat>
+  <field offset="0000" name="unk1" type="u32" size="4" />
+  <field offset="0018" name="unk2" type="float" size="4" />
+  <field offset="001c" name="unk3" type="float" size="4" />
+  <field offset="0034" name="unk4" type="float" size="4" />
+  <field offset="0068" name="unk5" type="float" size="4" />
+  <field offset="006c" name="unk6" type="float" size="4" />
+  <field offset="0070" name="unk7" type="float" size="4" />
+  <field offset="0088" name="unk8" type="float" size="4" />
+  <field offset="00b0" name="unk9" type="float" size="4" />
+  <field offset="00b4" name="unk10" type="u8" size="224" />
+</dbformat>

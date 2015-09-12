@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_zoneobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =23 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="mapfile" type="string" size="64" />
+  <field offset="00d0" name="isenabledblockctrl" type="bool4" size="4" />
+  <field offset="00d4" name="ctrlmaxz" type="u32" size="4" />
+  <field offset="00d8" name="ctrlmaxx" type="u32" size="4" />
+  <field offset="00dc" name="ctrlminz" type="u32" size="4" />
+  <field offset="00e0" name="ctrlminx" type="u32" size="4" />
+  <field offset="00e4" name="isprivatezone" type="bool4" size="4" />
+  <field offset="00e8" name="baseroomcount" type="u32" size="4" />
+  <field offset="00ec" name="playroomcount" type="u32" size="4" />
+  <field offset="00f0" name="privatezonetype" type="u32" size="4" />
+  <field offset="00f4" name="privatezonelivetime" type="u32" size="4" />
+  <field offset="00f8" name="isenabledrevpoint" type="bool4" size="4" />
+  <field offset="00fc" name="revx" type="u32" size="4" />
+  <field offset="0100" name="revy" type="u32" size="4" />
+  <field offset="0104" name="revz" type="u32" size="4" />
+  <field offset="0108" name="revzoneid" type="u32" size="4" />
+  <field offset="010c" name="viewblock" type="u32" size="4" />
+  <field offset="0110" name="mapid" type="u32" size="4" />
+  <field offset="0114" name="campstatueobjid" type="u32" size="4" />
+  <field offset="0118" name="mapcount" type="u32" size="4" />
+  <field offset="011c" name="mapid1" type="u32" size="4" />
+  <field offset="0120" name="mapname1" type="string" size="64" />
+  <field offset="0160" name="iseabledsave1" type="bool4" size="4" />
+  <field offset="0164" name="mapid2" type="u32" size="4" />
+  <field offset="0168" name="mapname2" type="string" size="64" />
+  <field offset="01a8" name="iseabledsave2" type="bool4" size="4" />
+  <field offset="01ac" name="mapid3" type="u32" size="4" />
+  <field offset="01b0" name="mapname3" type="string" size="64" />
+  <field offset="01f0" name="iseabledsave3" type="bool4" size="4" />
+  <field offset="01f4" name="mapid4" type="u32" size="4" />
+  <field offset="01f8" name="mapname4" type="string" size="64" />
+  <field offset="0238" name="iseabledsave4" type="bool4" size="4" />
+  <field offset="023c" name="mapid5" type="u32" size="4" />
+  <field offset="0240" name="mapname5" type="string" size="64" />
+  <field offset="0280" name="iseabledsave5" type="bool4" size="4" />
+  <field offset="0284" name="mapid6" type="u32" size="4" />
+  <field offset="0288" name="mapname6" type="string" size="64" />
+  <field offset="02c8" name="iseabledsave6" type="bool4" size="4" />
+  <field offset="02cc" name="mapid7" type="u32" size="4" />
+  <field offset="02d0" name="mapname7" type="string" size="64" />
+  <field offset="0310" name="iseabledsave7" type="bool4" size="4" />
+  <field offset="0314" name="mapid8" type="u32" size="4" />
+  <field offset="0318" name="mapname8" type="string" size="64" />
+  <field offset="0358" name="iseabledsave8" type="bool4" size="4" />
+  <field offset="035c" name="mapid9" type="u32" size="4" />
+  <field offset="0360" name="mapname9" type="string" size="64" />
+  <field offset="03a0" name="iseabledsave9" type="bool4" size="4" />
+  <field offset="03a4" name="mapid10" type="u32" size="4" />
+  <field offset="03a8" name="mapname10" type="string" size="64" />
+  <field offset="03e8" name="iseabledsave10" type="bool4" size="4" />
+  <field offset="03ec" name="mapid11" type="u32" size="4" />
+  <field offset="03f0" name="mapname11" type="string" size="64" />
+  <field offset="0430" name="iseabledsave11" type="bool4" size="4" />
+  <field offset="0434" name="mapid12" type="u32" size="4" />
+  <field offset="0438" name="mapname12" type="string" size="64" />
+  <field offset="0478" name="iseabledsave12" type="bool4" size="4" />
+  <field offset="047c" name="mapid13" type="u32" size="4" />
+  <field offset="0480" name="mapname13" type="string" size="64" />
+  <field offset="04c0" name="iseabledsave13" type="bool4" size="4" />
+  <field offset="04c4" name="mapid14" type="u32" size="4" />
+  <field offset="04c8" name="mapname14" type="string" size="64" />
+  <field offset="0508" name="iseabledsave14" type="bool4" size="4" />
+  <field offset="050c" name="mapid15" type="u32" size="4" />
+  <field offset="0510" name="mapname15" type="string" size="64" />
+  <field offset="0550" name="iseabledsave15" type="bool4" size="4" />
+  <field offset="0554" name="mapid16" type="u32" size="4" />
+  <field offset="0558" name="mapname16" type="string" size="64" />
+  <field offset="0598" name="iseabledsave16" type="bool4" size="4" />
+  <field offset="059c" name="mapid17" type="u32" size="4" />
+  <field offset="05a0" name="mapname17" type="string" size="64" />
+  <field offset="05e0" name="iseabledsave17" type="bool4" size="4" />
+  <field offset="05e4" name="mapid18" type="u32" size="4" />
+  <field offset="05e8" name="mapname18" type="string" size="64" />
+  <field offset="0628" name="iseabledsave18" type="bool4" size="4" />
+  <field offset="062c" name="mapid19" type="u32" size="4" />
+  <field offset="0630" name="mapname19" type="string" size="64" />
+  <field offset="0670" name="iseabledsave19" type="bool4" size="4" />
+  <field offset="0674" name="mapid20" type="u32" size="4" />
+  <field offset="0678" name="mapname20" type="string" size="64" />
+  <field offset="06b8" name="iseabledsave20" type="bool4" size="4" />
+  <field offset="06bc" name="mapid21" type="u32" size="4" />
+  <field offset="06c0" name="mapname21" type="string" size="64" />
+  <field offset="0700" name="iseabledsave21" type="bool4" size="4" />
+  <field offset="0704" name="mapid22" type="u32" size="4" />
+  <field offset="0708" name="mapname22" type="string" size="64" />
+  <field offset="0748" name="iseabledsave22" type="bool4" size="4" />
+  <field offset="074c" name="mapid23" type="u32" size="4" />
+  <field offset="0750" name="mapname23" type="string" size="64" />
+  <field offset="0790" name="iseabledsave23" type="bool4" size="4" />
+  <field offset="0794" name="mapid24" type="u32" size="4" />
+  <field offset="0798" name="mapname24" type="string" size="64" />
+  <field offset="07d8" name="iseabledsave24" type="bool4" size="4" />
+  <field offset="07dc" name="mapid25" type="u32" size="4" />
+  <field offset="07e0" name="mapname25" type="string" size="64" />
+  <field offset="0820" name="iseabledsave25" type="bool4" size="4" />
+  <field offset="0824" name="mapid26" type="u32" size="4" />
+  <field offset="0828" name="mapname26" type="string" size="64" />
+  <field offset="0868" name="iseabledsave26" type="bool4" size="4" />
+  <field offset="086c" name="mapid27" type="u32" size="4" />
+  <field offset="0870" name="mapname27" type="string" size="64" />
+  <field offset="08b0" name="iseabledsave27" type="bool4" size="4" />
+  <field offset="08b4" name="mapid28" type="u32" size="4" />
+  <field offset="08b8" name="mapname28" type="string" size="64" />
+  <field offset="08f8" name="iseabledsave28" type="bool4" size="4" />
+  <field offset="08fc" name="mapid29" type="u32" size="4" />
+  <field offset="0900" name="mapname29" type="string" size="64" />
+  <field offset="0940" name="iseabledsave29" type="bool4" size="4" />
+  <field offset="0944" name="mapid30" type="u32" size="4" />
+  <field offset="0948" name="mapname30" type="string" size="64" />
+  <field offset="0988" name="iseabledsave30" type="bool4" size="4" />
+  <field offset="098c" name="mapid31" type="u32" size="4" />
+  <field offset="0990" name="mapname31" type="string" size="64" />
+  <field offset="09d0" name="iseabledsave31" type="bool4" size="4" />
+  <field offset="09d4" name="mapid32" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="09d8" name="mapname32" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0a18" name="iseabledsave32" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0a1c" name="mapid33" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0a20" name="mapname33" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0a60" name="iseabledsave33" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0a64" name="mapid34" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0a68" name="mapname34" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0aa8" name="iseabledsave34" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0aac" name="mapid35" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0ab0" name="mapname35" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0af0" name="iseabledsave35" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0af4" name="mapid36" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0af8" name="mapname36" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0b38" name="iseabledsave36" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0b3c" name="mapid37" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0b40" name="mapname37" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0b80" name="iseabledsave37" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0b84" name="mapid38" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0b88" name="mapname38" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0bc8" name="iseabledsave38" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0bcc" name="mapid39" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0bd0" name="mapname39" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0c10" name="iseabledsave39" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0c14" name="mapid40" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0c18" name="mapname40" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0c58" name="iseabledsave40" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0c5c" name="luainitzone" type="string" size="64" />
+  <field offset="0c9c" name="isenabledride" type="u8" size="1" />
+  <field offset="0c9d" name="zoneinikey0" type="string" size="64" />
+  <field offset="0cdd" name="zoneinivalue0" type="string" size="64" />
+  <field offset="0d1d" name="zoneinikey1" type="string" size="64" />
+  <field offset="0d5d" name="zoneinivalue1" type="string" size="64" />
+  <field offset="0d9d" name="zoneinikey2" type="string" size="64" />
+  <field offset="0ddd" name="zoneinivalue2" type="string" size="64" />
+  <field offset="0e1d" name="zoneinikey3" type="string" size="64" />
+  <field offset="0e5d" name="zoneinivalue3" type="string" size="64" />
+  <field offset="0e9d" name="zoneinikey4" type="string" size="64" />
+  <field offset="0edd" name="zoneinivalue4" type="string" size="64" />
+  <field offset="0f1d" name="zoneinikey5" type="string" size="64" />
+  <field offset="0f5d" name="zoneinivalue5" type="string" size="64" />
+  <field offset="0f9d" name="zoneinikey6" type="string" size="64" />
+  <field offset="0fdd" name="zoneinivalue6" type="string" size="64" />
+  <field offset="101d" name="zoneinikey7" type="string" size="64" />
+  <field offset="105d" name="zoneinivalue7" type="string" size="64" />
+  <field offset="109d" name="zoneinikey8" type="string" size="64" />
+  <field offset="10dd" name="zoneinivalue8" type="string" size="64" />
+  <field offset="111d" name="zoneinikey9" type="string" size="64" />
+  <field offset="115d" name="zoneinivalue9" type="string" size="64" />
+  <field offset="119d" name="zoneinikey10" type="string" size="64" />
+  <field offset="11dd" name="zoneinivalue10" type="string" size="64" />
+  <field offset="121d" name="zoneinikey11" type="string" size="64" />
+  <field offset="125d" name="zoneinivalue11" type="string" size="64" />
+  <field offset="129d" name="zoneinikey12" type="string" size="64" />
+  <field offset="12dd" name="zoneinivalue12" type="string" size="64" />
+  <field offset="131d" name="zoneinikey13" type="string" size="64" />
+  <field offset="135d" name="zoneinivalue13" type="string" size="64" />
+  <field offset="139d" name="zoneinikey14" type="string" size="64" />
+  <field offset="13dd" name="zoneinivalue14" type="string" size="64" />
+  <field offset="141d" name="zoneinikey15" type="u32" size="4" /> <!-- =0 -->
+  <field offset="145d" name="zoneinivalue15" type="u32" size="4" /> <!-- =0 -->
+  <field offset="149d" name="zoneinikey16" type="u32" size="4" /> <!-- =0 -->
+  <field offset="14dd" name="zoneinivalue16" type="u32" size="4" /> <!-- =0 -->
+  <field offset="151d" name="zoneinikey17" type="u32" size="4" /> <!-- =0 -->
+  <field offset="155d" name="zoneinivalue17" type="u32" size="4" /> <!-- =0 -->
+  <field offset="159d" name="zoneinikey18" type="u32" size="4" /> <!-- =0 -->
+  <field offset="15dd" name="zoneinivalue18" type="u32" size="4" /> <!-- =0 -->
+  <field offset="161d" name="zoneinikey19" type="u32" size="4" /> <!-- =0 -->
+  <field offset="165d" name="zoneinivalue19" type="u32" size="4" /> <!-- =0 -->
+  <field offset="169d" name="zoneinikey20" type="u32" size="4" /> <!-- =0 -->
+  <field offset="16dd" name="zoneinivalue20" type="u32" size="4" /> <!-- =0 -->
+  <field offset="171d" name="zoneinikey21" type="u32" size="4" /> <!-- =0 -->
+  <field offset="175d" name="zoneinivalue21" type="u32" size="4" /> <!-- =0 -->
+  <field offset="179d" name="zoneinikey22" type="u32" size="4" /> <!-- =0 -->
+  <field offset="17dd" name="zoneinivalue22" type="u32" size="4" /> <!-- =0 -->
+  <field offset="181d" name="zoneinikey23" type="u32" size="4" /> <!-- =0 -->
+  <field offset="185d" name="zoneinivalue23" type="u32" size="4" /> <!-- =0 -->
+  <field offset="189d" name="zoneinikey24" type="u32" size="4" /> <!-- =0 -->
+  <field offset="18dd" name="zoneinivalue24" type="u32" size="4" /> <!-- =0 -->
+  <field offset="191d" name="zoneinikey25" type="u32" size="4" /> <!-- =0 -->
+  <field offset="195d" name="zoneinivalue25" type="u32" size="4" /> <!-- =0 -->
+  <field offset="199d" name="zoneinikey26" type="u32" size="4" /> <!-- =0 -->
+  <field offset="19dd" name="zoneinivalue26" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1a1d" name="zoneinikey27" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1a5d" name="zoneinivalue27" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1a9d" name="zoneinikey28" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1add" name="zoneinivalue28" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1b1d" name="zoneinikey29" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1b5d" name="zoneinivalue29" type="u32" size="4" /> <!-- =0 -->
+  <field offset="1ba0" name="roomplayercount" type="u32" size="4" />
+  <field offset="1ba4" name="isworldbattleground" type="bool4" size="4" />
+  <field offset="1ba8" name="iworldbattlegroundworldid" type="u32" size="4" />
+  <field offset="1bac" name="iscountrybattleground" type="u8" size="1" />
+  <field offset="1bad" name="isallowteamjoin" type="u8" size="1" />
+  <field offset="1bae" name="isenablebattlegroundqueue" type="u8" size="2" />
+  <field offset="1bb0" name="islimitjoinlevel" type="bool4" size="4" />
+  <field offset="1bb4" name="iminjoinlevel" type="bool4" size="4" />
+  <field offset="1bb8" name="imaxjoinlevel" type="bool4" size="4" />
+  <field offset="1bbc" name="isforcegroup" type="u8" size="1" />
+  <field offset="1bbd" name="luaprejoinqueuecheck" type="string" size="64" />
+  <field offset="1bfd" name="luaassistworldgroupid" type="string" size="71" />
+  <field offset="1c44" name="icountrywarlinkmap1" type="bool4" size="4" />
+  <field offset="1c48" name="icountrywarlinkmap2" type="u32" size="4" />
+  <field offset="1c4c" name="icountrywarlinkmap3" type="u32" size="4" />
+  <field offset="1c50" name="icountrywarlinkmap4" type="u8" size="0" />
+<!--  <field offset="1c50" name="isautojoineventzone" type="u32" size="4" /> = 0 ? -->
+</dbformat>

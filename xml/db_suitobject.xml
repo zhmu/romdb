@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_suitobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =17 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="totalcount" type="u32" size="4" /> <!-- Max Items -->
+  <field offset="0094" name="basetype1_1" type="u32" size="4" /> <!-- Stat bonus ID with 2 items  1 -->
+  <field offset="0098" name="basetype1_2" type="u32" size="4" /> <!-- Stat bonus ID with 2 items  2 -->
+  <field offset="009c" name="basetype1_3" type="u32" size="4" /> <!-- Stat bonus ID with 2 items  3 -->
+  <field offset="00a0" name="basetypevalue1_1" type="u32" size="4" /> <!-- Stat bonus value with 2 items 1 -->
+  <field offset="00a4" name="basetypevalue1_2" type="u32" size="4" /> <!-- Stat bonus value with 2 items 2 -->
+  <field offset="00a8" name="basetypevalue1_3" type="u32" size="4" /> <!-- Stat bonus value with 2 items 3 -->
+  <field offset="00ac" name="basetype2_1" type="u32" size="4" /> <!-- Additional Stat bonus ID with 3 items  1 -->
+  <field offset="00b0" name="basetype2_2" type="u32" size="4" /> <!-- Additional Stat bonus ID with 3 items  2 -->
+  <field offset="00b4" name="basetype2_3" type="u32" size="4" /> <!-- Additional Stat bonus ID with 3 items  3 -->
+  <field offset="00b8" name="basetypevalue2_1" type="u32" size="4" /> <!-- Stat bonus value with 3 items 1 -->
+  <field offset="00bc" name="basetypevalue2_2" type="u32" size="4" /> <!-- Stat bonus value with 3 items 2 -->
+  <field offset="00c0" name="basetypevalue2_3" type="u32" size="4" /> <!-- Stat bonus value with 3 items 3 -->
+  <field offset="00c4" name="basetype3_1" type="u32" size="4" /> <!-- Additional Stat bonus ID with 4 items  1 -->
+  <field offset="00c8" name="basetype3_2" type="u32" size="4" /> <!-- Additional Stat bonus ID with 4 items  2 -->
+  <field offset="00cc" name="basetype3_3" type="u32" size="4" /> <!-- Additional Stat bonus ID with 4 items  3 -->
+  <field offset="00d0" name="basetypevalue3_1" type="u32" size="4" /> <!-- Stat bonus value with 4 items 1 -->
+  <field offset="00d4" name="basetypevalue3_2" type="u32" size="4" /> <!-- Stat bonus value with 4 items 2 -->
+  <field offset="00d8" name="basetypevalue3_3" type="u32" size="4" /> <!-- Stat bonus value with 4 items 3 -->
+  <field offset="00dc" name="basetype4_1" type="u32" size="4" /> <!-- Additional Stat bonus ID with 5 items  1 -->
+  <field offset="00e0" name="basetype4_2" type="u32" size="4" /> <!-- Additional Stat bonus ID with 5 items  2 -->
+  <field offset="00e4" name="basetype4_3" type="u32" size="4" /> <!-- Additional Stat bonus ID with 5 items  3 -->
+  <field offset="00e8" name="basetypevalue4_1" type="u32" size="4" /> <!-- Stat bonus value with 5 items 1 -->
+  <field offset="00ec" name="basetypevalue4_2" type="u32" size="4" /> <!-- Stat bonus value with 5 items 2 -->
+  <field offset="00f0" name="basetypevalue4_3" type="u32" size="4" /> <!-- Stat bonus value with 5 items 3 -->
+  <field offset="00f4" name="basetype5_1" type="u32" size="4" /> <!-- Additional Stat bonus ID with 6 items  1 -->
+  <field offset="00f8" name="basetype5_2" type="u32" size="4" /> <!-- Additional Stat bonus ID with 6 items  2 -->
+  <field offset="00fc" name="basetype5_3" type="u32" size="4" /> <!-- Additional Stat bonus ID with 6 items  3 -->
+  <field offset="0100" name="basetypevalue5_1" type="u32" size="4" /> <!-- Stat bonus value with 6 items 1 -->
+  <field offset="0104" name="basetypevalue5_2" type="u32" size="4" /> <!-- Stat bonus value with 6 items 2 -->
+  <field offset="0108" name="basetypevalue5_3" type="u32" size="4" /> <!-- Stat bonus value with 6 items 3 -->
+  <field offset="010c" name="basetype6_1" type="u32" size="4" /> <!-- Additional Stat bonus ID with 7 items  1 -->
+  <field offset="0110" name="basetype6_2" type="u32" size="4" /> <!-- Additional Stat bonus ID with 7 items  2 -->
+  <field offset="0114" name="basetype6_3" type="u32" size="4" /> <!-- Additional Stat bonus ID with 7 items  3 -->
+  <field offset="0118" name="basetypevalue6_1" type="u32" size="4" /> <!-- Stat bonus value with 7 items 1 -->
+  <field offset="011c" name="basetypevalue6_2" type="u32" size="4" /> <!-- Stat bonus value with 7 items 2 -->
+  <field offset="0120" name="basetypevalue6_3" type="u32" size="4" /> <!-- Stat bonus value with 7 items 3 -->
+  <field offset="0124" name="basetype7_1" type="u32" size="4" /> <!-- Additional Stat bonus ID with 8 items  1 -->
+  <field offset="0128" name="basetype7_2" type="u32" size="4" /> <!-- Additional Stat bonus ID with 8 items  2 -->
+  <field offset="012c" name="basetype7_3" type="u32" size="4" /> <!-- Additional Stat bonus ID with 8 items  3 -->
+  <field offset="0130" name="basetypevalue7_1" type="u32" size="4" /> <!-- Stat bonus value with 8 items 1 -->
+  <field offset="0134" name="basetypevalue7_2" type="u32" size="4" /> <!-- Stat bonus value with 8 items 2 -->
+  <field offset="0138" name="basetypevalue7_3" type="u32" size="4" /> <!-- Stat bonus value with 8 items 3 -->
+  <field offset="013c" name="basetype8_1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0140" name="basetype8_2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0144" name="basetype8_3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0148" name="basetypevalue8_1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="014c" name="basetypevalue8_2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0150" name="basetypevalue8_3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0154" name="basetype9_1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0158" name="basetype9_2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="015c" name="basetype9_3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0160" name="basetypevalue9_1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0164" name="basetypevalue9_2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0168" name="basetypevalue9_3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="016c" name="unk2" type="u32" size="4" />
+  <field offset="0170" name="unk3" type="u32" size="4" />
+  <field offset="0174" name="unk4" type="u32" size="4" />
+  <field offset="0194" name="unk5" type="u32" size="4" />
+  <field offset="0198" name="unk6" type="u32" size="4" />
+  <field offset="019c" name="unk7" type="u32" size="4" />
+  <field offset="01c8" name="unk8" type="u32" size="4" />
+  <field offset="01cc" name="unk9" type="u32" size="4" />
+  <field offset="01d0" name="unk10" type="u32" size="4" />
+  <field offset="01d4" name="unk11" type="u32" size="4" />
+  <field offset="01d8" name="unk12" type="u32" size="4" />
+  <field offset="01dc" name="unk13" type="u32" size="4" />
+  <field offset="01f0" name="unk14" type="u32" size="4" />
+  <field offset="01f4" name="unk15" type="u32" size="4" />
+  <field offset="01f8" name="unk16" type="u32" size="4" />
+  <field offset="01fc" name="unk17" type="u32" size="4" />
+  <field offset="0200" name="unk18" type="u32" size="4" />
+  <field offset="0204" name="unk19" type="string" size="32" />
+  <field offset="0224" name="unk20" type="u32" size="4" />
+  <field offset="0228" name="unk21" type="u32" size="4" />
+  <field offset="022c" name="unk22" type="u32" size="4" />
+  <field offset="0230" name="unk23" type="u32" size="4" />
+  <field offset="0234" name="unk24" type="u32" size="4" />
+  <field offset="0238" name="unk25" type="u32" size="4" />
+  <field offset="023c" name="unk26" type="u32" size="4" />
+  <field offset="0240" name="unk27" type="u32" size="4" />
+  <field offset="0244" name="unk28" type="u32" size="4" />
+  <field offset="024c" name="unk29" type="u32" size="4" />
+  <field offset="0250" name="unk30" type="u32" size="4" />
+  <field offset="0254" name="unk31" type="u32" size="4" />
+  <field offset="0258" name="unk32" type="u32" size="4" />
+  <field offset="025c" name="unk33" type="u32" size="4" />
+  <field offset="0260" name="unk34" type="string" size="4" />
+  <field offset="0264" name="unk35" type="string" size="4" />
+  <field offset="0268" name="unk36" type="u32" size="4" />
+  <field offset="026c" name="unk37" type="u32" size="4" />
+  <field offset="0280" name="unk38" type="u32" size="4" />
+  <field offset="0284" name="unk39" type="u32" size="4" />
+  <field offset="0288" name="unk40" type="u32" size="4" />
+  <field offset="028c" name="unk41" type="u32" size="4" />
+  <field offset="0290" name="unk42" type="u32" size="4" />
+  <field offset="0294" name="unk43" type="u32" size="4" />
+  <field offset="0298" name="unk44" type="u32" size="4" />
+  <field offset="029c" name="unk45" type="u32" size="4" />
+  <field offset="02a0" name="unk46" type="u32" size="4" />
+  <field offset="02a4" name="unk47" type="u32" size="4" />
+  <field offset="02a8" name="unk48" type="u32" size="4" />
+  <field offset="02ac" name="unk49" type="u32" size="4" />
+  <field offset="02b0" name="unk50" type="u32" size="4" />
+  <field offset="02b4" name="unk51" type="u32" size="4" />
+  <field offset="02b8" name="unk52" type="u32" size="4" />
+  <field offset="02bc" name="unk53" type="string" size="4" />
+  <field offset="02c0" name="unk54" type="string" size="4" />
+  <field offset="02c4" name="unk55" type="u32" size="4" />
+  <field offset="02c8" name="unk56" type="u32" size="4" />
+  <field offset="02cc" name="unk57" type="u32" size="4" />
+  <field offset="02dc" name="unk58" type="u32" size="4" />
+  <field offset="02e0" name="unk59" type="u32" size="4" />
+  <field offset="02e4" name="unk60" type="u32" size="4" />
+  <field offset="02e8" name="unk61" type="u32" size="4" />
+  <field offset="02ec" name="unk62" type="string" size="4" />
+  <field offset="02f0" name="unk63" type="string" size="4" />
+  <field offset="02f4" name="unk64" type="u32" size="4" />
+  <field offset="02f8" name="unk65" type="u32" size="4" />
+  <field offset="02fc" name="unk66" type="string" size="4" />
+  <field offset="0300" name="unk67" type="u32" size="4" />
+  <field offset="0304" name="unk68" type="u32" size="4" />
+  <field offset="0308" name="unk69" type="u32" size="4" />
+  <field offset="030c" name="unk70" type="u32" size="4" />
+  <field offset="0310" name="unk71" type="u32" size="4" />
+  <field offset="0314" name="unk72" type="u32" size="4" />
+  <field offset="0318" name="unk73" type="string" size="4" />
+  <field offset="031c" name="unk74" type="string" size="4" />
+  <field offset="0320" name="unk75" type="string" size="4" />
+  <field offset="0324" name="unk76" type="u32" size="4" />
+  <field offset="0328" name="unk77" type="string" size="16" />
+  <field offset="0338" name="unk78" type="u32" size="4" />
+  <field offset="033c" name="unk79" type="u32" size="4" />
+  <field offset="0340" name="unk80" type="u32" size="4" />
+  <field offset="0344" name="unk81" type="u32" size="4" />
+  <field offset="0348" name="unk82" type="u32" size="4" />
+  <field offset="034c" name="unk83" type="u32" size="4" />
+  <field offset="0350" name="unk84" type="u32" size="4" />
+  <field offset="0354" name="unk85" type="u32" size="4" />
+  <field offset="0358" name="unk86" type="string" size="4" />
+  <field offset="035c" name="unk87" type="u32" size="4" />
+  <field offset="0360" name="unk88" type="u32" size="4" />
+  <field offset="0364" name="unk89" type="u32" size="4" />
+  <field offset="0368" name="unk90" type="u32" size="4" />
+  <field offset="036c" name="unk91" type="u32" size="4" />
+  <field offset="0370" name="unk92" type="u32" size="4" />
+  <field offset="0374" name="unk93" type="u32" size="4" />
+  <field offset="0378" name="unk94" type="string" size="4" />
+  <field offset="037c" name="unk95" type="string" size="4" />
+  <field offset="0380" name="unk96" type="u32" size="4" />
+  <field offset="0384" name="unk97" type="string" size="16" />
+  <field offset="0394" name="unk98" type="u32" size="4" />
+  <field offset="0398" name="unk99" type="u32" size="4" />
+  <field offset="039c" name="unk100" type="u32" size="4" />
+  <field offset="03bc" name="unk101" type="u32" size="4" />
+  <field offset="03c0" name="unk102" type="u32" size="4" />
+  <field offset="03c4" name="unk103" type="u32" size="4" />
+  <field offset="04a8" name="suitlist1" type="u32" size="4" /> <!-- Suit item1 -->
+  <field offset="04ac" name="suitlist2" type="u32" size="4" /> <!-- Suit item2 -->
+  <field offset="04b0" name="suitlist3" type="u32" size="4" /> <!-- Suit item3 -->
+  <field offset="04b4" name="suitlist4" type="u32" size="4" /> <!-- Suit item4 -->
+  <field offset="04b8" name="suitlist5" type="u32" size="4" /> <!-- Suit item5 -->
+  <field offset="04bc" name="suitlist6" type="u32" size="4" /> <!-- Suit item6 -->
+  <field offset="04c0" name="suitlist7" type="u32" size="4" /> <!-- Suit item7 -->
+  <field offset="04c4" name="suitlist8" type="u32" size="4" /> <!-- Suit item8 -->
+  <field offset="04c8" name="suitlist9" type="u32" size="4" /> <!-- Suit item9 -->
+  <field offset="04cc" name="suitlist10" type="u32" size="4" /> <!-- Suit item10 -->
+  <field offset="04d0" name="suitiskilld1" type="u32" size="4" />
+  <field offset="04d4" name="suitiskilld2" type="u32" size="4" />
+  <field offset="04d8" name="suitiskilld3" type="u32" size="4" />
+  <field offset="04dc" name="suitiskilld4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="04e0" name="suitskillmoney" type="u32" size="4" />
+</dbformat>

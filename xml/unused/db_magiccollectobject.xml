@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_magiccollectobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =21 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="magiclv" type="u32" size="4" />
+  <field offset="0094" name="effecttype" type="u32" size="4" />
+  <field offset="0098" name="targettype" type="u32" size="4" />
+  <field offset="009c" name="attackdistance" type="u32" size="4" />
+  <field offset="00a0" name="effectrange" type="u32" size="4" />
+  <field offset="00a4" name="rangetype" type="u32" size="4" />
+  <field offset="00a8" name="rangeselecttype" type="u32" size="4" />
+  <field offset="00ac" name="effectcount" type="u32" size="4" />
+  <field offset="00b0" name="decreasearg" type="u32" size="4" />
+  <field offset="00b4" name="hitratefunc" type="u32" size="4" />
+  <field offset="00b8" name="hitratearg1" type="float" size="4" />
+  <field offset="00bc" name="hitratearg2" type="float" size="4" />
+  <field offset="00c0" name="costtype" type="u32" size="4" />
+  <field offset="00c4" name="costvalue" type="u32" size="4" />
+  <field offset="00c8" name="costtype1" type="u32" size="4" />
+  <field offset="00cc" name="costvalue1" type="u32" size="4" />
+  <field offset="00d0" name="needtype1" type="u32" size="4" />
+  <field offset="00d4" name="needvalue1" type="u32" size="4" />
+  <field offset="00d8" name="needtype2" type="u32" size="4" />
+  <field offset="00dc" name="needvalue2" type="u32" size="4" />
+  <field offset="00e0" name="coldownclass" type="u32" size="4" />
+  <field offset="00e4" name="coldowntype" type="u32" size="4" />
+  <field offset="00e8" name="coldowntime" type="u32" size="4" />
+  <field offset="00ec" name="coldowntimeallmagic" type="u32" size="4" />
+  <field offset="00f0" name="flag" type="u32" size="4" />
+  <field offset="00f4" name="spelltime" type="float" size="4" />
+  <field offset="00f8" name="magicattackdelay" type="float" size="4" />
+  <field offset="00fc" name="spellcount" type="u32" size="4" />
+  <field offset="0100" name="nextspelltime" type="float" size="4" />
+  <field offset="0104" name="luascript" type="string" size="128" />
+  <field offset="0184" name="magiccheckfunctype1" type="u32" size="4" />
+  <field offset="0188" name="magicbaseid1" type="u32" size="4" />
+  <field offset="018c" name="magiccheckarg11" type="u32" size="4" />
+  <field offset="0190" name="magiccheckarg21" type="u32" size="4" />
+  <field offset="0198" name="magiccheckfunctype2" type="u32" size="4" />
+  <field offset="019c" name="magicbaseid2" type="u32" size="4" />
+  <field offset="01a0" name="magiccheckarg12" type="u32" size="4" />
+  <field offset="01a4" name="magiccheckarg22" type="u32" size="4" />
+  <field offset="01ac" name="magiccheckfunctype3" type="u32" size="4" />
+  <field offset="01b0" name="magicbaseid3" type="u32" size="4" />
+  <field offset="01b4" name="magiccheckarg13" type="u32" size="4" />
+  <field offset="01b8" name="magiccheckarg23" type="u32" size="4" />
+  <field offset="01c0" name="magiccheckfunctype4" type="bool4" size="4" />
+  <field offset="01c4" name="magicbaseid4" type="u32" size="4" />
+  <field offset="01c8" name="magiccheckarg14" type="u32" size="4" />
+  <field offset="01cc" name="magiccheckarg24" type="u32" size="4" /> <!-- =0 -->
+  <field offset="01d4" name="magiccheckfunctype5" type="u32" size="4" />
+  <field offset="01d8" name="magicbaseid5" type="u32" size="4" />
+  <field offset="01dc" name="magiccheckarg15" type="u32" size="4" />
+  <field offset="01e0" name="magiccheckarg25" type="u32" size="4" />
+  <field offset="01e8" name="magiccheckfunctype6" type="u32" size="4" />
+  <field offset="01ec" name="magicbaseid6" type="u32" size="4" />
+  <field offset="01f0" name="magiccheckarg16" type="u32" size="4" />
+  <field offset="01f4" name="magiccheckarg26" type="u32" size="4" />
+  <field offset="01fc" name="magiccheckfunctype7" type="u32" size="4" />
+  <field offset="0200" name="magicbaseid7" type="u32" size="4" />
+  <field offset="0204" name="magiccheckarg17" type="u32" size="4" />
+  <field offset="0208" name="magiccheckarg27" type="u32" size="4" />
+  <field offset="0210" name="magiccheckfunctype8" type="u32" size="4" />
+  <field offset="0214" name="magicbaseid8" type="u32" size="4" />
+  <field offset="0218" name="magiccheckarg18" type="u32" size="4" />
+  <field offset="021c" name="magiccheckarg28" type="u32" size="4" />
+  <field offset="0224" name="magiccheckfunctype9" type="u32" size="4" />
+  <field offset="0228" name="magicbaseid9" type="u32" size="4" />
+  <field offset="022c" name="magiccheckarg19" type="u32" size="4" />
+  <field offset="0230" name="magiccheckarg29" type="u32" size="4" />
+  <field offset="0238" name="magiccheckfunctype10" type="u32" size="4" />
+  <field offset="023c" name="magicbaseid10" type="u32" size="4" />
+  <field offset="0240" name="magiccheckarg110" type="u32" size="4" />
+  <field offset="0244" name="magiccheckarg210" type="u32" size="4" />
+  <field offset="024c" name="magiccheckfunctype11" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0250" name="magicbaseid11" type="u32" size="4" />
+  <field offset="0254" name="magiccheckarg111" type="u32" size="4" />
+  <field offset="0258" name="magiccheckarg211" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0260" name="magiccheckfunctype12" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0264" name="magicbaseid12" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0268" name="magiccheckarg112" type="u32" size="4" /> <!-- =0 -->
+  <field offset="026c" name="magiccheckarg212" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0274" name="magicspellgrouptype" type="u32" size="4" />
+  <field offset="0278" name="checkusescript" type="string" size="128" />
+  <field offset="02f8" name="maxskilllv" type="u32" size="4" />
+  <field offset="02fc" name="exptablerate" type="float" size="4" />
+  <field offset="0300" name="ismagicattackdelay_targetdist" type="bool4" size="4" />
+  <field offset="0304" name="unk2" type="u32" size="4" />
+  <field offset="030c" name="combotype" type="u32" size="4" />
+  <field offset="0310" name="nextmagicid" type="u32" size="4" />
+  <field offset="0314" name="mode" type="u32" size="4" />
+  <field offset="0318" name="petskilltype" type="u32" size="4" />
+  <field offset="031c" name="movedelaytime" type="float" size="4" />
+  <field offset="0320" name="clicollisiontype" type="u32" size="4" />
+  <field offset="0324" name="clicollisionvalue" type="u32" size="4" />
+  <field offset="0328" name="limitlv" type="u32" size="4" />
+  <field offset="032c" name="selecttargetscript" type="string" size="64" />
+  <field offset="036c" name="shoottargetscript" type="string" size="64" />
+  <field offset="03ac" name="addsoulpoint" type="u32" size="4" />
+</dbformat>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_mineobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =11 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0040" name="rare" type="bool4" size="4" />
+  <field offset="0044" name="generaterate" type="float" size="4" />
+  <field offset="0048" name="maxworldcount" type="float" size="4" />
+  <field offset="0090" name="itemtype" type="u32" size="4" />
+  <field offset="0094" name="basecount" type="float" size="4" />
+  <field offset="0098" name="createtype" type="bool4" size="4" />
+  <field offset="009c" name="lvlimit" type="u32" size="4" />
+  <field offset="00a0" name="getitem1" type="u32" size="4" />
+  <field offset="00a4" name="getitem2" type="u32" size="4" />
+  <field offset="00a8" name="getitem3" type="u32" size="4" />
+  <field offset="00ac" name="getitem4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b0" name="getitem5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b4" name="getitem6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b8" name="getitem7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00bc" name="getitemrate1" type="u32" size="4" />
+  <field offset="00c0" name="getitemrate2" type="u32" size="4" />
+  <field offset="00c4" name="getitemrate3" type="u32" size="4" />
+  <field offset="00c8" name="getitemrate4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00cc" name="getitemrate5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d0" name="getitemrate6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d4" name="getitemrate7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d8" name="getitemcount1" type="u32" size="4" />
+  <field offset="00dc" name="getitemcount2" type="bool4" size="4" />
+  <field offset="00e0" name="getitemcount3" type="bool4" size="4" />
+  <field offset="00e4" name="getitemcount4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00e8" name="getitemcount5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00ec" name="getitemcount6" type="bool4" size="4" />
+  <field offset="00f0" name="getitemcount7" type="bool4" size="4" />
+  <field offset="00f4" name="flagid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f8" name="reduceval" type="u32" size="4" />
+  <field offset="00fc" name="generateobj1" type="u32" size="4" />
+  <field offset="0100" name="generateobj2" type="u32" size="4" />
+  <field offset="0104" name="generateobj3" type="u32" size="4" />
+  <field offset="0108" name="generateobj4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="010c" name="generateobj5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0110" name="generateobjrate1" type="u32" size="4" />
+  <field offset="0114" name="generateobjrate2" type="u32" size="4" />
+  <field offset="0118" name="generateobjrate3" type="u32" size="4" />
+  <field offset="011c" name="generateobjrate4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0120" name="generateobjrate5" type="u32" size="4" /> <!-- =0 -->
+</dbformat>

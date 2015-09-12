@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_magicobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =3 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="magicfunc" type="u32" size="4" />
+  <field offset="0094" name="magictype" type="u32" size="4" />
+  <field offset="0098" name="effecttype" type="u32" size="4" />
+  <field offset="009c" name="effecttime" type="float" size="4" />
+  <field offset="00a0" name="dlv_effecttime" type="float" size="4" />
+  <field offset="00a4" name="effecttime_skilllvarg" type="float" size="4" />
+  <field offset="00a8" name="hatecost" type="u32" size="4" />
+  <field offset="00ac" name="maxbufflv" type="u32" size="4" />
+  <field offset="00b0" name="maxbufflv_skilllvarg" type="float" size="4" />
+  <field offset="00b4" name="magicgroupset" type="u32" size="4" />
+  <field offset="00b8" name="settingflag" type="float" size="4" />
+  <field offset="00bc" name="specialaction" type="u32" size="4" />
+  <field offset="00c0" name="assisttype" type="u32" size="4" />
+  <field offset="00c4" name="effectlv" type="u32" size="4" />
+  <field offset="00c8" name="effectaddontype" type="bool4" size="4" />
+  <field offset="00cc" name="effect" type="float" size="4" />
+  <field offset="00d0" name="effect1" type="u32" size="4" />
+  <field offset="00d4" name="magicclear" type="u32" size="4" />
+  <field offset="00d8" name="eqtype1" type="u32" size="4" />
+  <field offset="00dc" name="eqtype2" type="u32" size="4" />
+  <field offset="00e0" name="eqtype3" type="u32" size="4" />
+  <field offset="00e4" name="eqtype4" type="u32" size="4" />
+  <field offset="00e8" name="eqtype5" type="u32" size="4" />
+  <field offset="00ec" name="eqtype6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f0" name="eqtype7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f4" name="eqtype8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f8" name="eqtype9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00fc" name="eqtype10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0100" name="eqtypevalue1" type="u32" size="4" />
+  <field offset="0104" name="eqtypevalue2" type="u32" size="4" />
+  <field offset="0108" name="eqtypevalue3" type="u32" size="4" />
+  <field offset="010c" name="eqtypevalue4" type="u32" size="4" />
+  <field offset="0110" name="eqtypevalue5" type="u32" size="4" />
+  <field offset="0114" name="eqtypevalue6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0118" name="eqtypevalue7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="011c" name="eqtypevalue8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0120" name="eqtypevalue9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0124" name="eqtypevalue10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0128" name="eqtypeonattackmagicrate" type="u32" size="4" />
+  <field offset="012c" name="eqtypeonattackmagicrank" type="u32" size="4" />
+  <field offset="0130" name="eqtypeonattackmagicid" type="u32" size="4" />
+  <field offset="0134" name="ability_skilllvarg" type="float" size="4" />
+  <field offset="0138" name="ontimemagic_magic" type="u32" size="4" />
+  <field offset="013c" name="ontimemagic_time" type="u32" size="4" />
+  <field offset="0140" name="changeid" type="u32" size="4" />
+  <field offset="0144" name="rideid" type="u32" size="4" />
+  <field offset="0148" name="onattackmagicid" type="u32" size="4" />
+  <field offset="014c" name="onbufftimeoutmagicid" type="u32" size="4" />
+  <field offset="0150" name="onattackreboundmagicid" type="u32" size="4" />
+  <field offset="0154" name="onmagicattackreboundmagicid" type="u32" size="4" />
+  <field offset="0158" name="ondeadmagicid" type="u32" size="4" />
+  <field offset="015c" name="temphatecost" type="u32" size="4" />
+  <field offset="0160" name="clearmagicgroupset" type="u32" size="4" />
+  <field offset="0164" name="dottime" type="u32" size="4" />
+  <field offset="0168" name="dottype" type="u32" size="4" />
+  <field offset="016c" name="dotbase" type="u32" size="4" />
+  <field offset="0170" name="dotskilllvarg" type="float" size="4" />
+  <field offset="0174" name="atk_atktype" type="u32" size="4" />
+  <field offset="0178" name="atk_dmgpower" type="float" size="4" />
+  <field offset="017c" name="dmgpower_skilllvarg" type="float" size="4" />
+  <field offset="0180" name="atk_fixvalue" type="float" size="4" />
+  <field offset="0184" name="atk_fixtype" type="u32" size="4" />
+  <field offset="0188" name="fixdmg_skilllvarg" type="float" size="4" />
+  <field offset="018c" name="atk_rand" type="float" size="4" />
+  <field offset="0190" name="atk_critialrate" type="u32" size="4" />
+  <field offset="0194" name="atk_haterate" type="float" size="4" />
+  <field offset="0198" name="teleportzoneid" type="u32" size="4" />
+  <field offset="019c" name="teleportx" type="u32" size="4" />
+  <field offset="01a0" name="teleporty" type="u32" size="4" />
+  <field offset="01a4" name="teleportz" type="u32" size="4" />
+  <field offset="01a8" name="teleportdir" type="u32" size="4" />
+  <field offset="01ac" name="raiseexpprecnt" type="u32" size="4" />
+  <field offset="01b0" name="scobjid" type="u32" size="4" />
+  <field offset="01b4" name="sclevel" type="u32" size="4" />
+  <field offset="01b8" name="scrangelevel" type="u32" size="4" />
+  <field offset="01bc" name="sclivetime" type="u32" size="4" />
+  <field offset="01c0" name="scskilllvarg" type="u32" size="4" /> <!-- =0 -->
+  <field offset="01c4" name="sctype" type="u32" size="4" />
+  <field offset="01c8" name="scgroupid" type="u32" size="4" />
+  <field offset="01cc" name="scownerpowerrate" type="float" size="4" />
+  <field offset="01d0" name="scskilltype0" type="u32" size="4" />
+  <field offset="01d4" name="scskilltype1" type="u32" size="4" />
+  <field offset="01d8" name="scskilltype2" type="u32" size="4" />
+  <field offset="01dc" name="scinitlua" type="string" size="32" />
+  <field offset="01fc" name="siobjid" type="u32" size="4" />
+  <field offset="0200" name="stealsuccessrate" type="u32" size="4" />
+  <field offset="0204" name="mitype" type="u32" size="4" />
+  <field offset="0208" name="miobjid" type="u32" size="4" />
+  <field offset="020c" name="miplotname" type="string" size="64" />
+  <field offset="024c" name="milivetime" type="u32" size="4" />
+  <field offset="0250" name="miusemagic" type="u32" size="4" />
+  <field offset="0254" name="miondeadmagic" type="u32" size="4" />
+  <field offset="0258" name="migroupid" type="u32" size="4" />
+  <field offset="025c" name="mimode" type="u32" size="4" />
+  <field offset="0260" name="mitargettype" type="u32" size="4" />
+  <field offset="0264" name="mrplotname" type="string" size="64" />
+  <field offset="02a4" name="magicshield_type" type="float" size="4" />
+  <field offset="02a8" name="magicshield_effect" type="u32" size="4" />
+  <field offset="02ac" name="magicshield_point" type="u32" size="4" />
+  <field offset="02b0" name="magicshield_skilllvarg" type="float" size="4" />
+  <field offset="02b4" name="atkcaltype" type="u32" size="4" />
+  <field offset="02b8" name="magicgroupid" type="u32" size="4" />
+  <field offset="02bc" name="buffcount" type="float" size="4" />
+  <field offset="02c0" name="phyattacktype" type="u32" size="4" />
+  <field offset="02c4" name="isstandard_attack" type="bool4" size="4" />
+  <field offset="02c8" name="refpowerlv_attack" type="float" size="4" />
+  <field offset="02cc" name="refpowerrate_attack" type="float" size="4" />
+  <field offset="02d0" name="modelsize" type="float" size="4" />
+  <field offset="02d4" name="revive_skilllvarg" type="u32" size="4" />
+  <field offset="02d8" name="addbufftime" type="u32" size="4" />
+  <field offset="02dc" name="onkillmagicid" type="u32" size="4" />
+  <field offset="02e0" name="checkuselua" type="string" size="64" />
+  <field offset="0320" name="specialmagiceventtype" type="float" size="4" />
+  <field offset="0324" name="onspecialmagicid" type="float" size="4" />
+  <field offset="0328" name="bufftimedesc_type" type="float" size="4" />
+  <field offset="032c" name="bufftimedesc_time" type="u32" size="4" />
+  <field offset="0330" name="buffskill1" type="u32" size="4" />
+  <field offset="0334" name="buffskill2" type="u32" size="4" />
+  <field offset="0338" name="buffskill3" type="u32" size="4" />
+  <field offset="033c" name="buffskill4" type="u32" size="4" />
+  <field offset="0340" name="buffskill5" type="u32" size="4" />
+  <field offset="0344" name="buffskill6" type="u32" size="4" />
+  <field offset="0348" name="enduselua" type="string" size="64" />
+  <field offset="0388" name="hitbackdist" type="u32" size="4" />
+  <field offset="038c" name="carrycount" type="u32" size="4" />
+  <field offset="0394" name="buffmaxlv" type="u32" size="4" />
+  <field offset="0398" name="onbufftimeoutmagicidex" type="u32" size="4" />
+  <field offset="039c" name="motionchangetype1" type="u32" size="4" />
+  <field offset="03a0" name="motionchangetype2" type="u32" size="4" />
+  <field offset="03a4" name="motionchangetype3" type="u32" size="4" />
+  <field offset="03a8" name="motionchangetype4" type="u32" size="4" />
+  <field offset="03ac" name="motionchangeid1" type="u32" size="4" />
+  <field offset="03b0" name="motionchangeid2" type="u32" size="4" />
+  <field offset="03b4" name="motionchangeid3" type="u32" size="4" />
+  <field offset="03b8" name="motionchangeid4" type="u32" size="4" />
+  <field offset="03bc" name="settingflagex" type="bool4" size="4" />
+</dbformat>

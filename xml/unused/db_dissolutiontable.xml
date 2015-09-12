@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_dissolutiontable -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="level" type="u32" size="4" /> <!-- level of item -->
+  <field offset="0008" name="weapon" type="u32" size="4" /> <!-- jewel id for weapons -->
+  <field offset="000c" name="weapon_rate" type="float" size="4" /> <!-- jevel rate -->
+  <field offset="0010" name="armour" type="u32" size="4" /> <!-- ... for armour -->
+  <field offset="0014" name="armour_rate" type="float" size="4" />
+  <field offset="0018" name="accessory" type="float" size="4" />
+  <field offset="001c" name="accessory_rate" type="float" size="4" />
+</dbformat>

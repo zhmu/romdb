@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_worldmaptable -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="wdb" type="string" size="64" /> <!-- wdb path -->
+  <field offset="0044" name="name" type="string" size="64" /> <!-- zone name -->
+  <field offset="0084" name="id" type="u32" size="4" /> <!-- zone ID -->
+  <field offset="008c" name="count" type="u32" size="4" />
+  <field offset="0090" name="x1" type="u32" size="4" />
+  <field offset="0094" name="x2" type="u32" size="4" />
+  <field offset="0098" name="y1" type="u32" size="4" />
+  <field offset="009c" name="y2" type="u32" size="4" />
+</dbformat>

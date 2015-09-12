@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_cultivatepetlifeskill -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="product_type" type="u32" size="4" /> <!-- index of product in pet's products list for specified tools type -->
+  <field offset="0008" name="craft_type" type="u32" size="4" /> <!-- 0-2 (ore, wood, herb) -->
+  <field offset="000c" name="craft_time" type="u32" size="4" /> <!-- in seconds (10) -->
+  <field offset="0010" name="skill_level" type="u32" size="4" /> <!-- required level -->
+  <field offset="0014" name="tools" type="u32" size="4" /> <!-- tools id for this product (e.g. 204228) -->
+  <field offset="0020" name="product" type="u32" size="4" /> <!-- treasure id of product -->
+</dbformat>

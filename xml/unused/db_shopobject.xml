@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_shopobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =16 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="buyrate" type="u32" size="4" /> <!-- =100 -->
+  <field offset="0094" name="sellrate" type="u32" size="4" />
+  <field offset="0098" name="weaponrepair" type="bool4" size="4" />
+  <field offset="009c" name="sellitemid1" type="u32" size="4" />
+  <field offset="00a0" name="sellitemid2" type="u32" size="4" />
+  <field offset="00a4" name="sellitemid3" type="u32" size="4" />
+  <field offset="00a8" name="sellitemid4" type="u32" size="4" />
+  <field offset="00ac" name="sellitemid5" type="u32" size="4" />
+  <field offset="00b0" name="sellitemid6" type="u32" size="4" />
+  <field offset="00b4" name="sellitemid7" type="u32" size="4" />
+  <field offset="00b8" name="sellitemid8" type="u32" size="4" />
+  <field offset="00bc" name="sellitemid9" type="u32" size="4" />
+  <field offset="00c0" name="sellitemid10" type="u32" size="4" />
+  <field offset="00c4" name="sellitemid11" type="u32" size="4" />
+  <field offset="00c8" name="sellitemid12" type="u32" size="4" />
+  <field offset="00cc" name="sellitemid13" type="u32" size="4" />
+  <field offset="00d0" name="sellitemid14" type="u32" size="4" />
+  <field offset="00d4" name="sellitemid15" type="u32" size="4" />
+  <field offset="00d8" name="sellitemid16" type="u32" size="4" />
+  <field offset="00dc" name="sellitemid17" type="u32" size="4" />
+  <field offset="00e0" name="sellitemid18" type="u32" size="4" />
+  <field offset="00e4" name="sellitemid19" type="u32" size="4" />
+  <field offset="00e8" name="sellitemid20" type="u32" size="4" />
+  <field offset="00ec" name="sellitemid21" type="u32" size="4" />
+  <field offset="00f0" name="sellitemid22" type="u32" size="4" />
+  <field offset="00f4" name="sellitemid23" type="u32" size="4" />
+  <field offset="00f8" name="sellitemid24" type="u32" size="4" />
+  <field offset="00fc" name="sellitemid25" type="u32" size="4" />
+  <field offset="0100" name="sellitemid26" type="u32" size="4" />
+  <field offset="0104" name="sellitemid27" type="u32" size="4" />
+  <field offset="0108" name="sellitemid28" type="u32" size="4" />
+  <field offset="010c" name="sellitemid29" type="u32" size="4" />
+  <field offset="0110" name="sellitemid30" type="u32" size="4" />
+  <field offset="0114" name="sellitemmax1" type="u32" size="4" />
+  <field offset="0118" name="sellitemmax2" type="u32" size="4" />
+  <field offset="011c" name="sellitemmax3" type="u32" size="4" />
+  <field offset="0120" name="sellitemmax4" type="u32" size="4" />
+  <field offset="0124" name="sellitemmax5" type="u32" size="4" />
+  <field offset="0128" name="sellitemmax6" type="u32" size="4" />
+  <field offset="012c" name="sellitemmax7" type="u32" size="4" />
+  <field offset="0130" name="sellitemmax8" type="u32" size="4" />
+  <field offset="0134" name="sellitemmax9" type="u32" size="4" />
+  <field offset="0138" name="sellitemmax10" type="u32" size="4" />
+  <field offset="013c" name="sellitemmax11" type="u32" size="4" />
+  <field offset="0140" name="sellitemmax12" type="u32" size="4" />
+  <field offset="0144" name="sellitemmax13" type="u32" size="4" />
+  <field offset="0148" name="sellitemmax14" type="u32" size="4" />
+  <field offset="014c" name="sellitemmax15" type="u32" size="4" />
+  <field offset="0150" name="sellitemmax16" type="u32" size="4" />
+  <field offset="0154" name="sellitemmax17" type="u32" size="4" />
+  <field offset="0158" name="sellitemmax18" type="u32" size="4" />
+  <field offset="015c" name="sellitemmax19" type="u32" size="4" />
+  <field offset="0160" name="sellitemmax20" type="u32" size="4" />
+  <field offset="0164" name="sellitemmax21" type="u32" size="4" />
+  <field offset="0168" name="sellitemmax22" type="u32" size="4" />
+  <field offset="016c" name="sellitemmax23" type="u32" size="4" />
+  <field offset="0170" name="sellitemmax24" type="u32" size="4" />
+  <field offset="0174" name="sellitemmax25" type="u32" size="4" />
+  <field offset="0178" name="sellitemmax26" type="u32" size="4" />
+  <field offset="017c" name="sellitemmax27" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="0180" name="sellitemmax28" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="0184" name="sellitemmax29" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="0188" name="sellitemmax30" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="018c" name="sellitemporduce1" type="u32" size="4" />
+  <field offset="0190" name="sellitemporduce2" type="u32" size="4" />
+  <field offset="0194" name="sellitemporduce3" type="u32" size="4" />
+  <field offset="0198" name="sellitemporduce4" type="u32" size="4" />
+  <field offset="019c" name="sellitemporduce5" type="u32" size="4" />
+  <field offset="01a0" name="sellitemporduce6" type="u32" size="4" />
+  <field offset="01a4" name="sellitemporduce7" type="u32" size="4" />
+  <field offset="01a8" name="sellitemporduce8" type="u32" size="4" />
+  <field offset="01ac" name="sellitemporduce9" type="u32" size="4" />
+  <field offset="01b0" name="sellitemporduce10" type="u32" size="4" />
+  <field offset="01b4" name="sellitemporduce11" type="u32" size="4" />
+  <field offset="01b8" name="sellitemporduce12" type="u32" size="4" />
+  <field offset="01bc" name="sellitemporduce13" type="u32" size="4" />
+  <field offset="01c0" name="sellitemporduce14" type="u32" size="4" />
+  <field offset="01c4" name="sellitemporduce15" type="u32" size="4" />
+  <field offset="01c8" name="sellitemporduce16" type="u32" size="4" />
+  <field offset="01cc" name="sellitemporduce17" type="u32" size="4" />
+  <field offset="01d0" name="sellitemporduce18" type="u32" size="4" />
+  <field offset="01d4" name="sellitemporduce19" type="u32" size="4" />
+  <field offset="01d8" name="sellitemporduce20" type="u32" size="4" />
+  <field offset="01dc" name="sellitemporduce21" type="u32" size="4" />
+  <field offset="01e0" name="sellitemporduce22" type="u32" size="4" />
+  <field offset="01e4" name="sellitemporduce23" type="u32" size="4" />
+  <field offset="01e8" name="sellitemporduce24" type="u32" size="4" />
+  <field offset="01ec" name="sellitemporduce25" type="u32" size="4" />
+  <field offset="01f0" name="sellitemporduce26" type="u32" size="4" />
+  <field offset="01f4" name="sellitemporduce27" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="01f8" name="sellitemporduce28" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="01fc" name="sellitemporduce29" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="0200" name="sellitemporduce30" type="u32" size="4" /> <!-- =9999999 -->
+  <field offset="0204" name="sellcost1_1" type="u32" size="4" />
+  <field offset="0208" name="sellcost2_1" type="u32" size="4" />
+  <field offset="020c" name="sellcost1_2" type="u32" size="4" />
+  <field offset="0210" name="sellcost2_2" type="u32" size="4" />
+  <field offset="0214" name="sellcost1_3" type="u32" size="4" />
+  <field offset="0218" name="sellcost2_3" type="u32" size="4" />
+  <field offset="021c" name="sellcost1_4" type="u32" size="4" />
+  <field offset="0220" name="sellcost2_4" type="u32" size="4" />
+  <field offset="0224" name="sellcost1_5" type="u32" size="4" />
+  <field offset="0228" name="sellcost2_5" type="u32" size="4" />
+  <field offset="022c" name="sellcost1_6" type="u32" size="4" />
+  <field offset="0230" name="sellcost2_6" type="u32" size="4" />
+  <field offset="0234" name="sellcost1_7" type="u32" size="4" />
+  <field offset="0238" name="sellcost2_7" type="u32" size="4" />
+  <field offset="023c" name="sellcost1_8" type="u32" size="4" />
+  <field offset="0240" name="sellcost2_8" type="u32" size="4" />
+  <field offset="0244" name="sellcost1_9" type="u32" size="4" />
+  <field offset="0248" name="sellcost2_9" type="u32" size="4" />
+  <field offset="024c" name="sellcost1_10" type="u32" size="4" />
+  <field offset="0250" name="sellcost2_10" type="u32" size="4" />
+  <field offset="0254" name="sellcost1_11" type="u32" size="4" />
+  <field offset="0258" name="sellcost2_11" type="u32" size="4" />
+  <field offset="025c" name="sellcost1_12" type="u32" size="4" />
+  <field offset="0260" name="sellcost2_12" type="u32" size="4" />
+  <field offset="0264" name="sellcost1_13" type="u32" size="4" />
+  <field offset="0268" name="sellcost2_13" type="u32" size="4" />
+  <field offset="026c" name="sellcost1_14" type="u32" size="4" />
+  <field offset="0270" name="sellcost2_14" type="u32" size="4" />
+  <field offset="0274" name="sellcost1_15" type="u32" size="4" />
+  <field offset="0278" name="sellcost2_15" type="u32" size="4" />
+  <field offset="027c" name="sellcost1_16" type="u32" size="4" />
+  <field offset="0280" name="sellcost2_16" type="u32" size="4" />
+  <field offset="0284" name="sellcost1_17" type="u32" size="4" />
+  <field offset="0288" name="sellcost2_17" type="u32" size="4" />
+  <field offset="028c" name="sellcost1_18" type="u32" size="4" />
+  <field offset="0290" name="sellcost2_18" type="u32" size="4" />
+  <field offset="0294" name="sellcost1_19" type="u32" size="4" />
+  <field offset="0298" name="sellcost2_19" type="u32" size="4" />
+  <field offset="029c" name="sellcost1_20" type="u32" size="4" />
+  <field offset="02a0" name="sellcost2_20" type="u32" size="4" />
+  <field offset="02a4" name="sellcost1_21" type="u32" size="4" />
+  <field offset="02a8" name="sellcost2_21" type="u32" size="4" />
+  <field offset="02ac" name="sellcost1_22" type="u32" size="4" />
+  <field offset="02b0" name="sellcost2_22" type="u32" size="4" />
+  <field offset="02b4" name="sellcost1_23" type="u32" size="4" />
+  <field offset="02b8" name="sellcost2_23" type="u32" size="4" />
+  <field offset="02bc" name="sellcost1_24" type="u32" size="4" />
+  <field offset="02c0" name="sellcost2_24" type="u32" size="4" />
+  <field offset="02c4" name="sellcost1_25" type="u32" size="4" />
+  <field offset="02c8" name="sellcost2_25" type="u32" size="4" />
+  <field offset="02cc" name="sellcost1_26" type="u32" size="4" />
+  <field offset="02d0" name="sellcost2_26" type="u32" size="4" />
+  <field offset="02d4" name="sellcost1_27" type="u32" size="4" />
+  <field offset="02d8" name="sellcost2_27" type="u32" size="4" />
+  <field offset="02dc" name="sellcost1_28" type="u32" size="4" />
+  <field offset="02e0" name="sellcost2_28" type="u32" size="4" />
+  <field offset="02e4" name="sellcost1_29" type="u32" size="4" />
+  <field offset="02e8" name="sellcost2_29" type="u32" size="4" />
+  <field offset="02ec" name="sellcost1_30" type="u32" size="4" />
+  <field offset="02f0" name="sellcost2_30" type="u32" size="4" />
+  <field offset="02f4" name="costtype1_1" type="u32" size="4" />
+  <field offset="02f8" name="costtype2_1" type="u32" size="4" />
+  <field offset="02fc" name="costtype1_2" type="u32" size="4" />
+  <field offset="0300" name="costtype2_2" type="u32" size="4" />
+  <field offset="0304" name="costtype1_3" type="u32" size="4" />
+  <field offset="0308" name="costtype2_3" type="u32" size="4" />
+  <field offset="030c" name="costtype1_4" type="u32" size="4" />
+  <field offset="0310" name="costtype2_4" type="u32" size="4" />
+  <field offset="0314" name="costtype1_5" type="u32" size="4" />
+  <field offset="0318" name="costtype2_5" type="u32" size="4" />
+  <field offset="031c" name="costtype1_6" type="u32" size="4" />
+  <field offset="0320" name="costtype2_6" type="u32" size="4" />
+  <field offset="0324" name="costtype1_7" type="u32" size="4" />
+  <field offset="0328" name="costtype2_7" type="u32" size="4" />
+  <field offset="032c" name="costtype1_8" type="u32" size="4" />
+  <field offset="0330" name="costtype2_8" type="u32" size="4" />
+  <field offset="0334" name="costtype1_9" type="u32" size="4" />
+  <field offset="0338" name="costtype2_9" type="u32" size="4" />
+  <field offset="033c" name="costtype1_10" type="u32" size="4" />
+  <field offset="0340" name="costtype2_10" type="u32" size="4" />
+  <field offset="0344" name="costtype1_11" type="u32" size="4" />
+  <field offset="0348" name="costtype2_11" type="u32" size="4" />
+  <field offset="034c" name="costtype1_12" type="u32" size="4" />
+  <field offset="0350" name="costtype2_12" type="u32" size="4" />
+  <field offset="0354" name="costtype1_13" type="u32" size="4" />
+  <field offset="0358" name="costtype2_13" type="u32" size="4" />
+  <field offset="035c" name="costtype1_14" type="u32" size="4" />
+  <field offset="0360" name="costtype2_14" type="u32" size="4" />
+  <field offset="0364" name="costtype1_15" type="u32" size="4" />
+  <field offset="0368" name="costtype2_15" type="u32" size="4" />
+  <field offset="036c" name="costtype1_16" type="u32" size="4" />
+  <field offset="0370" name="costtype2_16" type="u32" size="4" />
+  <field offset="0374" name="costtype1_17" type="u32" size="4" />
+  <field offset="0378" name="costtype2_17" type="u32" size="4" />
+  <field offset="037c" name="costtype1_18" type="u32" size="4" />
+  <field offset="0380" name="costtype2_18" type="u32" size="4" />
+  <field offset="0384" name="costtype1_19" type="u32" size="4" />
+  <field offset="0388" name="costtype2_19" type="u32" size="4" />
+  <field offset="038c" name="costtype1_20" type="u32" size="4" />
+  <field offset="0390" name="costtype2_20" type="u32" size="4" />
+  <field offset="0394" name="costtype1_21" type="u32" size="4" />
+  <field offset="0398" name="costtype2_21" type="u32" size="4" />
+  <field offset="039c" name="costtype1_22" type="u32" size="4" />
+  <field offset="03a0" name="costtype2_22" type="u32" size="4" />
+  <field offset="03a4" name="costtype1_23" type="u32" size="4" />
+  <field offset="03a8" name="costtype2_23" type="u32" size="4" />
+  <field offset="03ac" name="costtype1_24" type="u32" size="4" />
+  <field offset="03b0" name="costtype2_24" type="u32" size="4" />
+  <field offset="03b4" name="costtype1_25" type="u32" size="4" />
+  <field offset="03b8" name="costtype2_25" type="u32" size="4" />
+  <field offset="03bc" name="costtype1_26" type="u32" size="4" />
+  <field offset="03c0" name="costtype2_26" type="u32" size="4" />
+  <field offset="03c4" name="costtype1_27" type="u32" size="4" />
+  <field offset="03c8" name="costtype2_27" type="u32" size="4" />
+  <field offset="03cc" name="costtype1_28" type="u32" size="4" />
+  <field offset="03d0" name="costtype2_28" type="u32" size="4" />
+  <field offset="03d4" name="costtype1_29" type="u32" size="4" />
+  <field offset="03d8" name="costtype2_29" type="u32" size="4" /> <!-- =0 -->
+  <field offset="03dc" name="costtype1_30" type="u32" size="4" />
+  <field offset="03e0" name="costtype2_30" type="u32" size="4" /> <!-- =0 -->
+</dbformat>

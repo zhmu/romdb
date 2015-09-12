@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_cultivatepetevent -->
+<dbformat>
+  <field offset="0000" name="unk1" type="u32" size="4" />
+  <field offset="0004" name="unk2" type="u32" size="4" />
+  <field offset="0008" name="unk3" type="u32" size="4" />
+  <field offset="000c" name="unk4" type="string" size="64" />
+  <field offset="004c" name="unk5" type="string" size="64" />
+  <field offset="008c" name="unk6" type="u32" size="4" />
+  <field offset="0090" name="unk7" type="u32" size="4" />
+  <field offset="0094" name="unk8" type="u32" size="4" />
+  <field offset="0098" name="unk9" type="u32" size="4" />
+  <field offset="009c" name="unk10" type="string" size="3" />
+  <field offset="009f" name="unk11" type="string" size="4" />
+  <field offset="00a3" name="unk12" type="string" size="4" />
+  <field offset="00a7" name="unk13" type="string" size="4" />
+  <field offset="00ab" name="unk14" type="string" size="4" />
+  <field offset="00af" name="unk15" type="string" size="4" />
+  <field offset="00b3" name="unk16" type="string" size="4" />
+  <field offset="00b7" name="unk17" type="string" size="4" />
+  <field offset="00bb" name="unk18" type="string" size="4" />
+  <field offset="00bf" name="unk19" type="string" size="4" />
+  <field offset="00c3" name="unk20" type="string" size="4" />
+  <field offset="00c7" name="unk21" type="string" size="4" />
+  <field offset="00cb" name="unk22" type="string" size="4" />
+  <field offset="00cf" name="unk23" type="string" size="4" />
+  <field offset="00d3" name="unk24" type="string" size="4" />
+  <field offset="00d7" name="unk25" type="string" size="4" />
+  <field offset="00db" name="unk26" type="string" size="4" />
+  <field offset="00df" name="unk27" type="string" size="4" />
+  <field offset="00e3" name="unk28" type="u32" size="4" />
+</dbformat>

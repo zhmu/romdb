@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_itemobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =2 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="001c" name="maxheap" type="float" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0028" name="mode" type="u32" size="4" />
+  <field offset="002c" name="pricestype" type="u32" size="4" />
+  <field offset="0030" name="selltype" type="u32" size="4" />
+  <field offset="0034" name="cost" type="u32" size="4" />
+  <field offset="0038" name="buyunit" type="u32" size="4" />
+  <field offset="0040" name="rare" type="u32" size="4" />
+  <field offset="0044" name="generaterate" type="float" size="4" />
+  <field offset="0048" name="maxworldcount" type="float" size="4" />
+  <field offset="004c" name="limitvoc" type="u32" size="4" />
+  <field offset="0050" name="limitrace" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0054" name="limitsex" type="u32" size="4" />
+  <field offset="0058" name="limitlv" type="u32" size="4" /> <!-- min. level for usage -->
+  <field offset="005c" name="limitstr" type="bool4" size="4" />
+  <field offset="0060" name="limitsta" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0064" name="limitint" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0068" name="limitmnd" type="u32" size="4" /> <!-- =0 -->
+  <field offset="006c" name="limitagi" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0070" name="livetimetype" type="bool4" size="4" />
+  <field offset="0074" name="livetime" type="u32" size="4" />
+  <field offset="0078" name="unk2" type="u32" size="4" />
+  <field offset="007c" name="unk3" type="u32" size="4" />
+  <field offset="0080" name="unk4" type="u32" size="4" />
+  <field offset="0084" name="unk5" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="0088" name="specialmoneycost" type="u32" size="4" />
+  <field offset="0094" name="itemtype" type="u32" size="4" /> <!-- see locales: 'SYS_ITEMTYPE_xx' -> General,Quest Item,Food,Dessert,Potion,Tools,... -->
+  <field offset="0098" name="incmagic_onuse" type="u32" size="4" />
+  <field offset="00a4" name="disappearrate" type="u32" size="4" />
+  <field offset="00a8" name="dissolutionrate" type="float" size="4" />
+  <field offset="00ac" name="srcrecipe" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0114" name="dropability1" type="u32" size="4" />
+  <field offset="0118" name="dropabilityrate1" type="u32" size="4" />
+  <field offset="011c" name="dropability2" type="u32" size="4" />
+  <field offset="0120" name="dropabilityrate2" type="u32" size="4" />
+  <field offset="0124" name="dropability3" type="u32" size="4" />
+  <field offset="0128" name="dropabilityrate3" type="u32" size="4" />
+  <field offset="012c" name="dropability4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0130" name="dropabilityrate4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0134" name="dropability5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0138" name="dropabilityrate5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="013c" name="dropability6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0140" name="dropabilityrate6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0150" name="maxattrcount" type="u32" size="4" />
+  <field offset="0194" name="usetype" type="u32" size="4" />
+  <field offset="0198" name="srvscript" type="string" size="128" />
+  <field offset="0218" name="cliscript" type="string" size="128" />
+  <field offset="0298" name="checkusescript" type="string" size="128" />
+  <field offset="0318" name="fixquality" type="u32" size="4" />
+  <field offset="031c" name="eqrefinetype" type="u32" size="4" />
+  <field offset="0320" name="eqrefinerate_base" type="float" size="4" />
+  <field offset="0324" name="eqrefinerate_fix" type="float" size="4" />
+  <field offset="0328" name="eqrefinerate_per" type="float" size="4" />
+  <field offset="032c" name="eqrefineeqminlv" type="u32" size="4" />
+  <field offset="0330" name="eqrefineeqmaxlv" type="u32" size="4" />
+  <field offset="0334" name="eqrefineminlv" type="u32" size="4" />
+  <field offset="0338" name="eqrefinemaxlv" type="u32" size="4" />
+  <field offset="033c" name="eqrefinefailed_leveldownrate_base" type="float" size="4" />
+  <field offset="0340" name="eqrefinefailed_leveldownrate_fix" type="float" size="4" />
+  <field offset="0344" name="eqrefinefailed_leveldownrate_per" type="float" size="4" />
+  <field offset="0348" name="eqrefinefailed_exploderate_base" type="float" size="4" />
+  <field offset="034c" name="eqrefinefailed_exploderate_fix" type="float" size="4" />
+  <field offset="0350" name="eqrefinefailed_exploderate_per" type="float" size="4" />
+  <field offset="0354" name="unk6" type="u8" size="1" />
+  <field offset="0355" name="isstandardcost" type="u8" size="3" />
+  <field offset="0358" name="referencelv" type="u32" size="4" />
+  <field offset="035c" name="coloring_offcolor" type="u32" size="4" />
+  <field offset="0360" name="coloring_maincolor" type="u32" size="4" />
+  <field offset="0368" name="cardid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0370" name="castingtime" type="u32" size="4" />
+  <field offset="03a8" name="guildcontributionvalue" type="u32" size="4" />
+  <field offset="0430" name="emfurnituretype" type="u32" size="4" />
+  <field offset="0434" name="emfurnitureeffect" type="u32" size="4" />
+  <field offset="0438" name="ifurniturestoragesize" type="u32" size="4" />
+  <field offset="043c" name="emfurniturepos" type="u32" size="4" />
+  <field offset="0440" name="icraftobjtype" type="u32" size="4" />
+  <field offset="0444" name="ifurnituresuitid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0448" name="exppoint" type="u32" size="4" />
+  <field offset="044c" name="tppoint" type="u32" size="4" />
+  <field offset="0450" name="blacksmithhqpoint" type="u32" size="4" />
+  <field offset="0454" name="carpenterhqpoint" type="u32" size="4" />
+  <field offset="0458" name="makearmorhqpoint" type="u32" size="4" />
+  <field offset="045c" name="tailorhqpoint" type="u32" size="4" />
+  <field offset="0460" name="cookhqpoint" type="u32" size="4" />
+  <field offset="0464" name="alchemyhqpoint" type="u32" size="4" />
+  <field offset="0468" name="digholemaxholecount" type="u32" size="4" />
+  <field offset="046c" name="digholetype" type="u32" size="4" />
+  <field offset="0470" name="digholerate" type="u32" size="4" />
+  <field offset="0474" name="isuseneedpassword" type="bool4" size="4" />
+  <field offset="0480" name="attrvalue1" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0484" name="attrvalue2" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0488" name="attrvalue3" type="u32" size="4" /> <!-- =0 -->
+  <field offset="048c" name="attrvalue4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0490" name="attrvalue5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0494" name="attrvalue6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0498" name="attrvalue7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="049c" name="attrvalue8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="04a0" name="senderrelation" type="u32" size="4" />
+  <field offset="04a4" name="targetrelation" type="u32" size="4" />
+  <field offset="04a8" name="starvalue" type="u32" size="4" />
+  <field offset="04b0" name="guildresourcetype" type="u32" size="4" />
+  <field offset="04b4" name="guildresourcevalue" type="u32" size="4" />
+  <field offset="04b8" name="selectbaseattrcount" type="u32" size="4" />
+  <field offset="04bc" name="baseattrcount" type="u32" size="4" />
+  <field offset="0500" name="ondestroyscript" type="string" size="68" />
+  <field offset="0544" name="furniturenpcobjid" type="u32" size="4" />
+  <field offset="0548" name="itemuseokscript" type="string" size="64" />
+  <field offset="0588" name="droplistpacket" type="u32" size="4" />
+  <field offset="058c" name="plant_seed_type" type="u32" size="4" />
+  <field offset="0590" name="plant_seed_growspeed" type="float" size="4" />
+  <field offset="0594" name="plant_seed_modeltype" type="u32" size="4" />
+  <field offset="0598" name="plant_seed_bestwater" type="u32" size="4" />
+  <field offset="059c" name="plant_seed_besttopdress" type="u32" size="4" />
+  <field offset="05a0" name="plant_seed_randseed" type="u32" size="4" /> <!-- =0 -->
+  <field offset="05a4" name="plant_pot_mode" type="u32" size="4" />
+  <field offset="05a8" name="plant_pot_type1_evn1" type="float" size="4" />
+  <field offset="05ac" name="plant_pot_type1_evn2" type="float" size="4" />
+  <field offset="05b0" name="plant_pot_type2_evn1" type="float" size="4" />
+  <field offset="05b4" name="plant_pot_type2_evn2" type="float" size="4" />
+  <field offset="05b8" name="plant_pot_type3_evn1" type="float" size="4" />
+  <field offset="05bc" name="plant_pot_type3_evn2" type="float" size="4" />
+  <field offset="05c0" name="plant_manure_type" type="u32" size="4" />
+  <field offset="05c4" name="plant_manure_addrare" type="u32" size="4" />
+  <field offset="05c8" name="plant_manure_addwater" type="u32" size="4" />
+  <field offset="05cc" name="plant_manure_addtopdress" type="u32" size="4" />
+  <field offset="05d0" name="plant_manure_addhealth" type="u32" size="4" />
+  <field offset="05d4" name="plant_manure_addgrow" type="u32" size="4" />
+  <field offset="05d8" name="plant_manure_feedpoint" type="u32" size="4" />
+  <field offset="05dc" name="plant_level" type="u32" size="4" />
+  <field offset="05e0" name="plant_decwater" type="float" size="4" />
+  <field offset="05e4" name="plant_dectopdress" type="float" size="4" />
+  <field offset="05e8" name="furniture_type" type="u32" size="4" />
+  <field offset="05ec" name="pet_petobjid" type="u32" size="4" />
+  <field offset="05f0" name="pet_lv" type="u32" size="4" />
+  <field offset="05f4" name="pet_skillpoint" type="u32" size="4" />
+  <field offset="05f8" name="pet_pettype" type="u32" size="4" />
+  <field offset="05fc" name="pet_property" type="u32" size="4" />
+  <field offset="0600" name="pet_talent" type="u32" size="4" />
+  <field offset="0604" name="pet_str" type="u32" size="4" />
+  <field offset="0608" name="pet_sta" type="u32" size="4" />
+  <field offset="060c" name="pet_int" type="u32" size="4" />
+  <field offset="0610" name="pet_mnd" type="u32" size="4" />
+  <field offset="0614" name="pet_agi" type="u32" size="4" />
+  <field offset="0618" name="pet_spirit" type="u32" size="4" />
+  <field offset="061c" name="pet_luaevent" type="string" size="64" />
+  <field offset="065c" name="petfood_skillpoint" type="u32" size="4" />
+  <field offset="0660" name="petfood_spirit" type="u32" size="4" />
+  <field offset="0664" name="petfood_loyal" type="u32" size="4" />
+  <field offset="0668" name="petfood_talent" type="u32" size="4" />
+  <field offset="066c" name="petfood_hunger" type="u32" size="4" />
+  <field offset="0670" name="petfood_exp" type="u32" size="4" />
+  <field offset="0674" name="petfood_effecttype" type="u32" size="4" />
+  <field offset="0678" name="petfood_effectvalue" type="u32" size="4" />
+  <field offset="067c" name="targetlimit_armorpos" type="u32" size="4" />
+  <field offset="0680" name="targetlimit_armortype" type="u32" size="4" />
+  <field offset="0684" name="targetlimit_weapontype" type="u32" size="4" />
+  <field offset="0688" name="targetlimit_weaponpos" type="u32" size="4" /> <!-- =0 -->
+  <field offset="068c" name="targetlimit_level" type="u32" size="4" />
+  <field offset="0690" name="targetlimit_other" type="u32" size="4" />
+  <field offset="06a0" name="furnituresoundid" type="u32" size="4" />
+  <field offset="06a4" name="exbagtype" type="u32" size="4" />
+  <field offset="06a8" name="exbagtypesub" type="u32" size="4" /> <!-- =0 -->
+  <field offset="06ac" name="bodymaxcount" type="u32" size="4" />
+  <field offset="06b4" name="titlesysfamous" type="u32" size="4" />
+  <field offset="06b8" name="titlesysexp" type="u32" size="4" />
+  <field offset="06bc" name="unk7" type="u8" size="12" />
+</dbformat>

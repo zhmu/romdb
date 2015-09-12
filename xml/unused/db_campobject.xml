@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_campobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =19 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="campname1" type="string" size="32" />
+  <field offset="00b0" name="campname2" type="string" size="32" />
+  <field offset="00d0" name="campname3" type="string" size="32" />
+  <field offset="00f0" name="campname4" type="string" size="32" />
+  <field offset="0110" name="campname5" type="string" size="32" />
+  <field offset="0130" name="campname6" type="string" size="32" />
+  <field offset="0150" name="campname7" type="string" size="32" />
+  <field offset="0170" name="campname8" type="string" size="32" />
+  <field offset="0190" name="campname9" type="string" size="32" />
+  <field offset="01b0" name="campname10" type="string" size="32" />
+  <field offset="01d0" name="campname11" type="string" size="32" />
+  <field offset="01f0" name="campname12" type="string" size="32" />
+  <field offset="0210" name="campname13" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0230" name="campname14" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0250" name="campname15" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0270" name="camprelation1" type="u32" size="4" />
+  <field offset="0274" name="unk2" type="u32" size="4" />
+  <field offset="0278" name="unk3" type="u32" size="4" />
+  <field offset="0280" name="camprelation2" type="u32" size="4" />
+  <field offset="0284" name="unk4" type="u32" size="4" />
+  <field offset="0288" name="unk5" type="u32" size="4" />
+  <field offset="0290" name="camprelation3" type="u32" size="4" />
+  <field offset="0294" name="unk6" type="u32" size="4" />
+  <field offset="0298" name="unk7" type="u32" size="4" />
+  <field offset="02a0" name="camprelation4" type="u32" size="4" />
+  <field offset="02a4" name="unk8" type="u32" size="4" />
+  <field offset="02a8" name="unk9" type="u32" size="4" />
+  <field offset="02b0" name="camprelation5" type="u32" size="4" />
+  <field offset="02b8" name="unk10" type="u32" size="4" />
+  <field offset="02c0" name="camprelation6" type="u32" size="4" />
+  <field offset="02c8" name="unk11" type="u32" size="4" />
+  <field offset="02d0" name="camprelation7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="02d8" name="unk12" type="u32" size="4" />
+  <field offset="02e0" name="camprelation8" type="u32" size="4" />
+  <field offset="02e4" name="unk13" type="u32" size="4" />
+  <field offset="02e8" name="unk14" type="u32" size="4" />
+  <field offset="02f0" name="camprelation9" type="u32" size="4" />
+  <field offset="02f4" name="unk15" type="u32" size="4" />
+  <field offset="02f8" name="unk16" type="u32" size="4" />
+  <field offset="0300" name="camprelation10" type="u32" size="4" />
+  <field offset="0304" name="unk17" type="u32" size="4" />
+  <field offset="0308" name="unk18" type="u32" size="4" />
+  <field offset="0310" name="camprelation11" type="u32" size="4" />
+  <field offset="0314" name="unk19" type="u32" size="4" />
+  <field offset="0318" name="unk20" type="u32" size="4" />
+  <field offset="0320" name="camprelation12" type="u32" size="4" />
+  <field offset="0324" name="unk21" type="u32" size="4" />
+  <field offset="0328" name="unk22" type="u32" size="4" />
+  <field offset="0330" name="camprelation13" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0340" name="camprelation14" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0350" name="camprelation15" type="u32" size="4" /> <!-- =0 -->
+</dbformat>

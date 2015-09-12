@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_imageobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =13 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" />
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" />
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="imagetype" type="u32" size="4" />
+  <field offset="0094" name="actfield" type="string" size="128" />
+  <field offset="0114" name="actworld" type="string" size="128" />
+  <field offset="0194" name="modelsize" type="u32" size="4" />
+  <field offset="0198" name="boundradiusx" type="u32" size="4" />
+  <field offset="019c" name="boundradiusy" type="u32" size="4" />
+  <field offset="01a0" name="armorpos" type="u32" size="4" />
+  <field offset="01a4" name="armormaincolor" type="u32" size="4" />
+  <field offset="01a8" name="armoroffcolor" type="u32" size="4" />
+  <field offset="01ac" name="gathermotion" type="string" size="128" />
+  <field offset="022c" name="gatherparticalpoint1" type="string" size="128" />
+  <field offset="02ac" name="gatherparticalname1" type="u32" size="4" />
+  <field offset="02b0" name="unk2" type="string" size="124" />
+  <field offset="032c" name="gatherparticalsound1" type="u8" size="1" />
+  <field offset="032d" name="gatherparticalpoint2" type="string" size="128" />
+  <field offset="03ad" name="gatherparticalname2" type="u32" size="4" />
+  <field offset="03b1" name="unk3" type="string" size="124" />
+  <field offset="042d" name="gatherparticalsound2" type="u8" size="1" />
+  <field offset="042e" name="gatherparticalpoint3" type="string" size="128" />
+  <field offset="04ae" name="gatherparticalname3" type="string" size="128" />
+  <field offset="052e" name="gatherparticalsound3" type="bool4" size="4" />
+  <field offset="05af" name="ridemotion" type="u32" size="4" />
+  <field offset="05cf" name="shootmotion" type="string" size="129" />
+  <field offset="0650" name="shootmotionscale" type="u32" size="4" />
+  <field offset="0654" name="shootact" type="u32" size="4" />
+  <field offset="0658" name="unk4" type="string" size="124" />
+  <field offset="06d4" name="shootpoint" type="string" size="32" />
+  <field offset="06f4" name="flypoint" type="string" size="32" />
+  <field offset="0714" name="flyact" type="u32" size="4" />
+  <field offset="0718" name="unk5" type="string" size="124" />
+  <field offset="0794" name="explodeact" type="u32" size="4" />
+  <field offset="0798" name="unk6" type="string" size="124" />
+  <field offset="0814" name="targetpoint" type="string" size="32" />
+  <field offset="0834" name="extendact" type="string" size="128" />
+  <field offset="08b4" name="extenpoint" type="string" size="32" />
+  <field offset="08d4" name="buffact" type="string" size="128" />
+  <field offset="0954" name="buffpoint" type="string" size="32" />
+  <field offset="0974" name="objecttype" type="u32" size="4" />
+  <field offset="0978" name="sound" type="u32" size="4" /> <!-- =0 -->
+  <field offset="09f8" name="paperdollhairname" type="string" size="64" />
+  <field offset="0a38" name="paperdollhairmaincolor" type="u32" size="4" />
+  <field offset="0a3c" name="paperdollhairoffcolor" type="u32" size="4" />
+  <field offset="0a40" name="paperdollfacename" type="string" size="64" />
+  <field offset="0a80" name="paperdollfacemaincolor" type="u32" size="4" />
+  <field offset="0a84" name="paperdollfaceoffcolor" type="u32" size="4" />
+  <field offset="0a88" name="paperdollheadname" type="string" size="64" />
+  <field offset="0ac8" name="paperdollheadmaincolor" type="u32" size="4" />
+  <field offset="0acc" name="paperdollheadoffcolor" type="u32" size="4" />
+  <field offset="0ad0" name="paperdollglovesname" type="string" size="64" />
+  <field offset="0b10" name="paperdollglovesmaincolor" type="u32" size="4" />
+  <field offset="0b14" name="paperdollglovesoffcolor" type="u32" size="4" />
+  <field offset="0b18" name="paperdollshoesname" type="string" size="64" />
+  <field offset="0b58" name="paperdollshoesmaincolor" type="u32" size="4" />
+  <field offset="0b5c" name="paperdollshoesoffcolor" type="u32" size="4" />
+  <field offset="0b60" name="paperdollclothesname" type="string" size="64" />
+  <field offset="0ba0" name="paperdollclothesmaincolor" type="u32" size="4" />
+  <field offset="0ba4" name="paperdollclothesoffcolor" type="u32" size="4" />
+  <field offset="0ba8" name="paperdollpantsname" type="string" size="64" />
+  <field offset="0be8" name="paperdollpantsmaincolor" type="u32" size="4" />
+  <field offset="0bec" name="paperdollpantsoffcolor" type="u32" size="4" />
+  <field offset="0bf0" name="paperdollbackname" type="string" size="64" />
+  <field offset="0c30" name="paperdollbackmaincolor" type="u32" size="4" />
+  <field offset="0c34" name="paperdollbackoffcolor" type="u32" size="4" />
+  <field offset="0c38" name="paperdollbeltname" type="string" size="64" />
+  <field offset="0c78" name="paperdollbeltmaincolor" type="u32" size="4" />
+  <field offset="0c7c" name="paperdollbeltoffcolor" type="u32" size="4" />
+  <field offset="0c80" name="paperdollshoudername" type="string" size="64" />
+  <field offset="0cc0" name="paperdollshoudermaincolor" type="u32" size="4" />
+  <field offset="0cc4" name="paperdollshouderoffcolor" type="u32" size="4" />
+  <field offset="0cc8" name="skincolor" type="u32" size="4" />
+  <field offset="0ccc" name="haircolor" type="u32" size="4" />
+  <field offset="0cd0" name="bonescalechest" type="u32" size="4" />
+  <field offset="0cd4" name="bonescalebuttock" type="u32" size="4" />
+  <field offset="0cd8" name="bonescalehand" type="u32" size="4" />
+  <field offset="0cdc" name="bonescaleleg" type="u32" size="4" />
+  <field offset="0ce0" name="bonescalebra" type="u32" size="4" />
+  <field offset="0ce4" name="alpha" type="u32" size="4" />
+  <field offset="0ce8" name="tiptype" type="u32" size="4" />
+  <field offset="0cec" name="isshowshadow" type="u8" size="1" />
+  <field offset="0ced" name="isthrowtype" type="u8" size="3" />
+  <field offset="0cf0" name="throwtypepreviewid" type="u32" size="4" />
+  <field offset="0cf4" name="flagtype" type="string" size="16" />
+  <field offset="0d04" name="flaginsignia" type="string" size="16" />
+  <field offset="0d14" name="flagbanner" type="string" size="16" />
+  <field offset="0d24" name="flaginsigniacolor1" type="u32" size="4" />
+  <field offset="0d28" name="flaginsigniacolor2" type="u32" size="4" />
+  <field offset="0d2c" name="flagbannercolor1" type="u32" size="4" />
+  <field offset="0d30" name="flagbannercolor2" type="u32" size="4" />
+  <field offset="0d34" name="limitsex" type="u32" size="4" />
+  <field offset="0d38" name="ispolylineeffect" type="bool4" size="4" />
+  <field offset="0d3c" name="magicshowtype" type="u32" size="4" />
+  <field offset="0d44" name="smallicontype" type="u32" size="4" />
+  <field offset="0d48" name="buffactex" type="string" size="128" />
+</dbformat>

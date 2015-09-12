@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!-- originally based on McBen's findings at
+     https://github.com/McBen/FDB_Extractor2/wiki/db_eqrefineabilityobject -->
+<dbformat>
+  <field offset="0000" name="guid" type="u32" size="4" />
+  <field offset="0004" name="unk1" type="u32" size="4" /> <!-- =22 -->
+  <field offset="0008" name="outputlanguage" type="u32" size="4" /> <!-- =-1 -->
+  <field offset="000c" name="name" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0010" name="name_plural" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0014" name="imageid" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0020" name="note" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0024" name="shortnote" type="u32" size="4" /> <!-- =0 -->
+  <field offset="0090" name="unk2" type="u32" size="4" />
+  <field offset="0094" name="unk3" type="u32" size="4" />
+  <field offset="0098" name="eqtype1" type="u32" size="4" /> <!-- Attribute to change 1 -->
+  <field offset="009c" name="eqtype2" type="u32" size="4" /> <!-- Attribute to change 2 -->
+  <field offset="00a0" name="eqtype3" type="u32" size="4" /> <!-- Attribute to change 3 -->
+  <field offset="00a4" name="eqtype4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00a8" name="eqtype5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00ac" name="eqtype6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b0" name="eqtype7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b4" name="eqtype8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00b8" name="eqtype9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00bc" name="eqtype10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00c0" name="eqtypevalue1" type="u32" size="4" /> <!-- value for attribute1 -->
+  <field offset="00c4" name="eqtypevalue2" type="u32" size="4" /> <!-- value for attribute2 -->
+  <field offset="00c8" name="eqtypevalue3" type="u32" size="4" /> <!-- value for attribute3 -->
+  <field offset="00cc" name="eqtypevalue4" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d0" name="eqtypevalue5" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d4" name="eqtypevalue6" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00d8" name="eqtypevalue7" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00dc" name="eqtypevalue8" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00e0" name="eqtypevalue9" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00e4" name="eqtypevalue10" type="u32" size="4" /> <!-- =0 -->
+  <field offset="00f4" name="exeqpowerrate" type="u32" size="4" /> <!-- Base values increase -->
+</dbformat>
