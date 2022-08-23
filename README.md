@@ -1,6 +1,14 @@
 # romdb
 
-This is a collection of tools and scripts to import, convert and present the Runes of Magic data files. Everything is licensed using the GNU Affero Generic Public License version 3 - make sure you understand it before using this work.
+This is a collection of tools and scripts to import, convert and present the Runes of Magic data files. Everything is licensed using the [GNU Affero Generic Public License version 3](LICENSE) - make sure you understand it before using this work.
+
+# Screenshots
+
+![ROMDB screenshot 1](images/romdb1.png)
+
+![ROMDB screenshot 2](images/romdb2.png)
+
+![ROMDB screenshot 3](images/romdb3.png)
 
 ## Required software
 
